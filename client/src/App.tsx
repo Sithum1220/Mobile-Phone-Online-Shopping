@@ -6,9 +6,11 @@ import {Header} from "./view/common/header/Header";
 
 function App() {
   return (
-   <BrowserRouter>
-    <Header/>
-   </BrowserRouter>
+      <div>
+          <BrowserRouter>
+              <Header />
+          </BrowserRouter>
+      </div>
   );
 }
 
