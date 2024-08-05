@@ -1,75 +1,86 @@
-import {useState} from "react";
-import {AiOutlineClose, AiOutlineMenu} from "react-icons/ai";
-import logo from "../../../images/devicer-logo.png"
+import React, {useState} from 'react';
+
 export function NavBar() {
-    // State to manage the navbar's visibility
-    const [nav, setNav] = useState(false);
 
-    // Toggle function to handle the navbar's display
-    const handleNav = () => {
-        setNav(!nav);
-    };
+    const [isOpen, setIsOpen] = useState(false);
+    const [isOpenMenu, setIsOpenMenu] = useState(false);
 
-    // Array containing navigation items
-    const navItems = [
-        { id: 1, text: 'Sign Up' },
-        { id: 2, text: 'Sign In' },
-        { id: 3, text: 'My List' },
-    ];
 
     return (
         <div className="max-w-full bg-[#F2F2F2]">
-            <div className='flex justify-between items-center h-10 max-w-[1240px] mx-auto px-4 text-black text-opacity-50'>
-                {/* Logo */}
-                <div className="flex gap-4 md:gap-8 items-center">
-                    <h1 className='text-[14px]  text-opacity-50 text-black'>Welcome to Devicer</h1>
+            <div
+                className="md:flex justify-between items-center max-w-[1240px] mx-auto py-1 md:px-4 text-black
+                text-opacity-50">
+                {/*web welcome*/}
+                <div className="flex gap-4 md:gap-8  items-center">
+                    <h1 className="text-[12px] hidden  md:block text-opacity-50 text-black">Welcome to Devicer</h1>
                     <div className="hidden  md:block">
-                        <span className="text-[15px] text-black me-2 opacity-55">Customer Care</span>
-                        <a className="text-[15px] hover:text-blue-600 text-black opacity-50" href="tel:1-800-123-4567"> 1-800-123-4567</a>
+                        <span className="text-[12px] text-black me-2 opacity-65">Customer Care</span>
+                        <a className="text-[12px] hover:text-blue-600 text-black opacity-50"
+                           href="tel:1-800-123-4567"> 1-800-123-4567</a>
                     </div>
                 </div>
 
-                {/* Desktop Navigation */}
-                <ul className='hidden md:flex'>
-                    {navItems.map(item => (
-                        <li
-                            key={item.id}
-                            className='p-4 hover:text-blue-600 text-[14px] rounded-xl m-2 cursor-pointer duration-300'
-                        >
-                            {item.text}
-                        </li>
-                    ))}
-                </ul>
-
-                {/* Mobile Navigation Icon */}
-                <div onClick={handleNav} className='block md:hidden'>
-                    {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
+                {/*mobile menu icon*/}
+                <div className={`flex justify-center md:hidden pt-6 gap-4 w-full md:gap-8 items-center ${isOpen ?
+                    "block" : "hidden"}`}>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                         fill="#5f6368" onClick={() => setIsOpenMenu(!isOpenMenu)}>
+                        <path
+                            d={isOpenMenu ? "m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 " +
+                                "224-56 56-224-224-224 224Z" : "M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-" +
+                                "200v-80h720v80H120Z"}/>
+                    </svg>
                 </div>
 
-                {/* Mobile Navigation Menu */}
-                <ul
-                    className={
-                        nav
-                            ? 'fixed md:hidden left-0 top-0 w-[50%] h-full  border-r-gray-900 bg-[#F2F2F2] ease-in-out duration-500'
-                            : 'ease-in-out w-[50%] duration-500 fixed top-0 bottom-0 left-[-100%]'
-                    }
-                >
-                    {/* Mobile Logo */}
-                    {/*<h1 >Devicer.</h1>*/}
-                    <img className='w-[100px] font-bold text-[#00df9a] m-4' src={logo} alt=""/>
+                <div className={`md:hidden flex justify-center bg-[#363636] py-4 mt-4 ${isOpenMenu ? "block" : "hidden"} ${isOpen ? "block" : "hidden"}`}>
+                    <ul className="space-y-6">
+                        <li><a href="/signin" className="text-gray-300  opacity-80 text-[12px] hover:text-white">Sign
+                            Up</a></li>
+                        <li><a href="/signup" className="text-gray-300  opacity-80 text-[12px] hover:text-white">Sign
+                            In</a></li>
+                        <li><a href="/mylist" className="text-gray-300  opacity-80 text-[12px] hover:text-white">My
+                            List</a></li>
+                    </ul>
+                </div>
 
-                    {/* Mobile Navigation Items */}
-                    {navItems.map(item => (
-                        <li
-                            key={item.id}
-                            className='p-4 border-b rounded-xl hover:bg-[#3452FF] duration-300 hover:text-white cursor-pointer border-gray-600'
-                        >
-                            {item.text}
-                        </li>
-                    ))}
-                </ul>
+
+                {/*mobile welcome*/}
+                <div className={`flex justify-center md:hidden py-8 gap-4 w-full md:gap-8 items-center ${isOpen ?
+                    "block" : "hidden"}`}>
+                    <h1 className="text-[12px] text-opacity-50 text-black">Welcome to Devicer</h1>
+                    <div className="">
+                        <span className="text-[12px] text-black me-2 opacity-65">Customer Care</span>
+                        <a className="text-[12px] hover:text-blue-600 text-black opacity-50"
+                           href="tel:1-800-123-4567"> 1-800-123-4567</a>
+                    </div>
+                </div>
+
+                {/*mobile arrow icon*/}
+                <div className="w-full flex justify-center md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                         fill="#5f6368" onClick={() => {
+                        setIsOpen(!isOpen)
+                    }}>
+                        <path d={isOpen ? "M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" :
+                            "M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"
+                        }/>
+                    </svg>
+                </div>
+
+
+                {/*web ul*/}
+                <div className="hidden  md:block">
+                    <ul className="flex space-x-6">
+                        <li><a href="/signin" className="text-black opacity-80 text-[12px] hover:text-blue-700">Sign
+                            Up</a></li>
+                        <li><a href="/signup" className="text-black opacity-80 text-[12px] hover:text-blue-700">Sign
+                            In</a></li>
+                        <li><a href="/mylist" className="text-black opacity-80 text-[12px] hover:text-blue-700">My
+                            List</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    )
-        ;
+    );
 }
