@@ -8,9 +8,9 @@ module.exports = {
         serif: ['Jost', 'sans']
       },
       colors: {
-        primary: '#6d40e4',
-        secondary: '#47b725',
-        tertiary: '#4c4d4b'
+        primary: '#3452FF',
+        secondary: '#2A2A2A',
+        text: '#A6A4A6'
       }
     },
   },
