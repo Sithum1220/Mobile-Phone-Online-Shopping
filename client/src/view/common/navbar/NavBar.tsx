@@ -9,7 +9,7 @@ export function NavBar() {
     return (
         <div className="max-w-full bg-[#F2F2F2]">
             <div
-                className="md:flex justify-between items-center max-w-[1240px] mx-auto py-1 md:px-4 text-black
+                className=" md:flex justify-between items-center max-w-[1240px] mx-auto py-2 md:px-10 text-black
                 text-opacity-50">
 
                 {/*web welcome*/}
@@ -22,7 +22,9 @@ export function NavBar() {
                     </div>
                 </div>
 
-                <div className={`overflow-hidden transition-all duration-700 ease-in-out ${isOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"}`}>
+                {/*mobile content*/}
+                <div className={`overflow-hidden transition-all duration-700 ease-in-out ${isOpen ? "max-h-[300px] " +
+                    "opacity-100" : "max-h-0 opacity-0"}`}>
                     {/*mobile menu icon*/}
                     <div className={`flex justify-center md:hidden pt-6 gap-4 w-full md:gap-8 items-center `}>
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"

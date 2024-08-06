@@ -1,13 +1,18 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {NavBar} from "./view/common/navbar/NavBar";
+import {DefaultLayout} from "./view/common/DefaultContent/DefaultLayout";
 
 function App() {
   return (
       <div>
           <BrowserRouter>
-              <NavBar />
+              <Routes>
+                  <Route path="/*"
+                         Component={DefaultLayout}>
+                  </Route>
+              </Routes>
           </BrowserRouter>
       </div>
   );
