@@ -2,7 +2,7 @@ import iphone15ProMax from '../../../images/iphone15promax.png';
 export function Home() {
     return (
         <>
-            <div className="bg-[#212529] ">
+            <div className="bg-[#212529] overflow-hidden">
                 <div className="mx-auto flex max-w-[1240px] py-7 h-[490px] justify-between items-center">
                     <div className="flex flex-col gap-8 pl-10 items-start">
                         <h1 className="text-white text-6xl font-light">New Collection <br/> Coming to town</h1>
