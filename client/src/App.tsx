@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {NavBar} from "./view/common/navbar/NavBar";
+import {NavBar} from "./view/common/Navbar/NavBar";
 import {DefaultLayout} from "./view/common/DefaultContent/DefaultLayout";
 
 function App() {
