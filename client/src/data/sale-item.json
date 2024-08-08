@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Iphone 11 128Gb",
+    "image": "https://pngimg.com/d/iphone_11_PNG38.png",
+    "color": "Blue",
+    "oldPrice": "$400.00",
+    "newPrice": "$350.00"
+  },
+  {
+    "title": "Iphone 12 pro 128Gb",
+    "image": "https://pngimg.com/d/iphone_11_PNG38.png",
+    "color": "Blue",
+    "oldPrice": "$400.00",
+    "newPrice": "$350.00"
+  },
+  {
+    "title": "Iphone 15 128Gb",
+    "image": "https://pngimg.com/d/iphone_11_PNG38.png",
+    "color": "Rose",
+    "oldPrice": "$400.00",
+    "newPrice": "$350.00"
+  }
+]

@@ -1,6 +1,7 @@
 import iphone15ProMax from '../../../images/iphone15promax.png';
 import bgGrid from '../../../images/grid-bg.jpg';
 import { ServicesCard } from "../../common/ServicesCard/ServicesCard";
+import {SaleCard} from "../../common/SaleCard/SaleCard";
 
 export function Home() {
     return (
@@ -28,6 +29,10 @@ export function Home() {
                 style={{ backgroundImage: `url(${bgGrid})` }}
                 className="bg-[#fcfcfc] bg-center bg-auto p-4 mx-auto w-full justify-center py-7 flex flex-row">
                 <ServicesCard/>
+            </div>
+
+            <div className="mx-auto max-w-[1240px] py-7 px-10">
+                <SaleCard />
             </div>
         </div>
     );
