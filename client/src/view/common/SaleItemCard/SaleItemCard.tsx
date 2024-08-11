@@ -29,7 +29,7 @@ export function SaleItemCard() {
     }, []);
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 p-4 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
             {SaleItemList.map((item: SaleItem, index) => (
                 <div className="flex flex-col lg:flex-row items-center border border-gray-200 hover:border-primary rounded-xl p-4 transition-all duration-300" key={index}>
                     <div className="relative mb-4">

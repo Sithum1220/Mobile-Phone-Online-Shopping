@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import ProductItem from '../../../data/product.json';
-import {Product, RootObjectProduct} from "../../../model/Product";
+import {RootObjectProduct} from "../../../model/Product";
 
 export function ProductCard() {
     const tabs = ['Recent', 'Featured', 'Top Rated'];
@@ -13,7 +13,7 @@ export function ProductCard() {
     }, [activeTab]);
 
     return (
-        <div className="px-4 sm:px-6 lg:px-8">
+        <div className="">
             <div className="mx-auto max-w-[1240px] pt-8 lg:pt-14">
                 <ul className="flex flex-wrap justify-center lg:justify-start space-x-4 lg:space-x-6 mb-6 lg:mb-0">
                     {tabs.map((tab) => (

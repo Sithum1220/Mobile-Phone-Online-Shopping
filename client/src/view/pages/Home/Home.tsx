@@ -4,6 +4,7 @@ import {ServicesCard} from "../../common/ServicesCard/ServicesCard";
 import {SaleItemCard} from "../../common/SaleItemCard/SaleItemCard";
 import React, {useState} from "react";
 import {ProductCard} from "../../common/ProductCard/ProductCard";
+import {DealOfTheDays} from "../../common/DealOfTheDays/DealOfTheDays";
 
 export function Home() {
 
@@ -34,16 +35,20 @@ export function Home() {
             </div>
             <div
                 style={{backgroundImage: `url(${bgGrid})`}}
-                className="bg-[#fcfcfc] bg-center bg-auto p-4 mx-auto w-full justify-center py-7 flex flex-row">
+                className="bg-[#fcfcfc] mx-auto bg-auto w-full">
                 <ServicesCard/>
             </div>
 
             <div className="mx-auto max-w-[1240px] py-7 px-10">
                 <SaleItemCard/>
-
-
                 <ProductCard/>
             </div>
+            <div
+                style={{backgroundImage: `url(${bgGrid})`}}
+                className="bg-[#fcfcfc] bg-auto mx-auto p-4 w-full">
+                <DealOfTheDays/>
+            </div>
+
         </div>
     );
 }

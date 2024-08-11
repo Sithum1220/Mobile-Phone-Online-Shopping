@@ -5,6 +5,7 @@ import {cilHome, cilPaperPlane} from "@coreui/icons";
 
 export function ServicesCard() {
     return (
+        <div className="px-10 py-7 mx-auto  max-w-[1240px]">
         <div
             className="border-[1px] border-gray-200 grid lg:grid-rows-1 md:grid-rows-2 grid-cols-4 flex-wrap w-full lg:w-auto bg-white mt-[2%]">
             <div
@@ -53,6 +54,7 @@ export function ServicesCard() {
                 </div>
             </div>
 
+        </div>
         </div>
     );
 }
