@@ -2,7 +2,7 @@ import SaleItemList from '../../../data/sale-item.json';
 import {SaleItem} from "../../../model/SaleItem";
 import {useEffect, useState} from "react";
 
-export function SaleCard() {
+export function SaleItemCard() {
     const [timeLeft, setTimeLeft] = useState({days: 28, hours: 5, minutes: 34, seconds: 25});
 
     useEffect(() => {
