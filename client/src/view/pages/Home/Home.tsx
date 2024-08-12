@@ -5,7 +5,7 @@ import {SaleItemCard} from "../../common/SaleItemCard/SaleItemCard";
 import React, {useState} from "react";
 import {RecentFeaturedProducts} from "../../common/RecentFeaturedProducts/RecentFeaturedProducts";
 import {DealOfTheDays} from "../../common/DealOfTheDays/DealOfTheDays";
-import {BestSellerProducts} from "../../common/BestSellerProducts/BestSellerProducts";
+import {BestSeller} from "../../common/BestSeller/BestSeller";
 
 export function Home() {
 
@@ -51,7 +51,7 @@ export function Home() {
             </div>
 
             <div className="mx-auto max-w-[1240px] py-7 px-10">
-                <BestSellerProducts />
+                <BestSeller />
             </div>
         </div>
     );

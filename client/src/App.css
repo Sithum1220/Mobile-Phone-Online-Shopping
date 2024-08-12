@@ -1,7 +1,7 @@
 .best-seller-slider .slick-slide {
-    padding: 0 10px;  /* Adjust this value to increase or decrease the gap */
+    padding: 0 10px;
 }
 
 .best-seller-slider .slick-list {
-    margin: 0 -10px;  /* This should be the negative of the padding above */
+    margin: 0 -10px;
 }
