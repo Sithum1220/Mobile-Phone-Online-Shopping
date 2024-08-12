@@ -57,5 +57,59 @@
         "price": "$ 420.00"
       }
     ]
+  },
+  {
+    "category": "BestSeller",
+    "product": [
+      {
+        "itemCategory": "Apple, Smart Watches",
+        "title": "Misfit Shine 2",
+        "image": "Misfit_Shine_2.png",
+        "price": "$ 55.00"
+      },
+      {
+        "itemCategory": "Computer Hardware, Keyboards",
+        "title": "Bluetooth Keyboard",
+        "image": "Bluetooth_Keyboard.png",
+        "price": "$ 120.00"
+      },
+      {
+        "itemCategory": "Smart Watches, Sony",
+        "title": "Sony Watch Series F",
+        "image": "Sony_Watch_Series_F.png",
+        "price": "$ 400.00"
+      },
+      {
+        "itemCategory": "Cell Phones, Motorola",
+        "title": "Nokia 6 Dual Sim Tempered Blue",
+        "image": "Nokia 6 Dual Sim_Tempered_Blue.png",
+        "price": "$ 420.00"
+      },
+      {
+        "itemCategory": "Cell Phones, Xiaomi",
+        "title": "Xiaomi Mi Mix 2",
+        "image": "Xiaomi_Mi_Mix_2.png",
+        "price": "$ 55.00"
+      },
+      {
+
+        "itemCategory": "Cell Phones, OnePlus",
+        "title": "OnePlus 5T",
+        "image": "OnePlus_5T.png",
+        "price": "$ 120.00"
+      },
+      {
+        "itemCategory": "Computer Hardware, Daydream View",
+        "title": "Google Daydream VR",
+        "image": "Google_Daydream_VR.png",
+        "price": "$ 400.00"
+      },
+      {
+        "itemCategory": "Acoustics, Computer Hardware",
+        "title": "JBL Pulse 3",
+        "image": "JBL_Pulse_3.png",
+        "price": "$ 420.00"
+      }
+    ]
   }
 ]

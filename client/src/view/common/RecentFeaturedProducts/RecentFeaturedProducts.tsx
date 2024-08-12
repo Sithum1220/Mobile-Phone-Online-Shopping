@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import ProductItem from '../../../data/product.json';
 import {RootObjectProduct} from "../../../model/Product";
 
-export function ProductCard() {
+export function RecentFeaturedProducts() {
     const tabs = ['Recent', 'Featured', 'Top Rated'];
     const [activeTab, setActiveTab] = useState('Recent');
     const [filteredProducts, setFilteredProducts] = useState<RootObjectProduct[]>([]);
@@ -38,7 +38,10 @@ export function ProductCard() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-6 lg:mt-10">
                 {filteredProducts.map((product, index) => (
-                    <div key={index} className="border-2 border-gray-200 p-4 lg:p-6 rounded-xl flex flex-col justify-between">
+                    <div
+                        key={index}
+                        className="border-2 border-gray-200 hover:border-primary transition-all duration-500 hover:scale-105 p-4 lg:p-6 rounded-xl flex flex-col justify-between"
+                    >
                         <div className="h-[150px] sm:h-[180px] lg:h-[210px] mb-4">
                             <img
                                 src={require(`../../../images/product/${product.image}`)}
@@ -54,16 +57,21 @@ export function ProductCard() {
                                 <h3 className="text-sm lg:text-base mb-2">{product.price}</h3>
                                 <div className="flex justify-center mb-3">
                                     {[...Array(4)].map((_, i) => (
-                                        <svg key={i} className="w-3 h-3 lg:w-4 lg:h-4 fill-current text-yellow-400"
-                                             xmlns="http://www.w3.org/2000/svg"
-                                             viewBox="0 0 24 24">
+                                        <svg
+                                            key={i}
+                                            className="w-3 h-3 lg:w-4 lg:h-4 fill-current text-yellow-400"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24"
+                                        >
                                             <path
                                                 d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.817 1.508 8.213L12 18.897l-7.444 4.439 1.508-8.213L.587 9.306l8.332-1.151z"/>
                                         </svg>
                                     ))}
-                                    <svg className="w-3 h-3 lg:w-4 lg:h-4 fill-current text-gray-300"
-                                         xmlns="http://www.w3.org/2000/svg"
-                                         viewBox="0 0 24 24">
+                                    <svg
+                                        className="w-3 h-3 lg:w-4 lg:h-4 fill-current text-gray-300"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                    >
                                         <path
                                             d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.817 1.508 8.213L12 18.897l-7.444 4.439 1.508-8.213L.587 9.306l8.332-1.151z"/>
                                     </svg>

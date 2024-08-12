@@ -31,7 +31,7 @@ export function SaleItemCard() {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4">
             {SaleItemList.map((item: SaleItem, index) => (
-                <div className="flex flex-col lg:flex-row items-center border border-gray-200 hover:border-primary rounded-xl p-4 transition-all duration-300" key={index}>
+                <div className="flex flex-col lg:flex-row items-center border border-gray-200 hover:border-primary transition-all duration-300 hover:scale-105 rounded-xl p-4 transition-all duration-300" key={index}>
                     <div className="relative mb-4">
                         <span className="absolute top-2 left-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded-xl">SALE!</span>
                         <img className="w-full h-auto object-cover rounded-lg" src={item.image} alt={item.title}/>

@@ -3,8 +3,9 @@ import bgGrid from '../../../images/grid-bg.jpg';
 import {ServicesCard} from "../../common/ServicesCard/ServicesCard";
 import {SaleItemCard} from "../../common/SaleItemCard/SaleItemCard";
 import React, {useState} from "react";
-import {ProductCard} from "../../common/ProductCard/ProductCard";
+import {RecentFeaturedProducts} from "../../common/RecentFeaturedProducts/RecentFeaturedProducts";
 import {DealOfTheDays} from "../../common/DealOfTheDays/DealOfTheDays";
+import {BestSellerProducts} from "../../common/BestSellerProducts/BestSellerProducts";
 
 export function Home() {
 
@@ -41,7 +42,7 @@ export function Home() {
 
             <div className="mx-auto max-w-[1240px] py-7 px-10">
                 <SaleItemCard/>
-                <ProductCard/>
+                <RecentFeaturedProducts/>
             </div>
             <div
                 style={{backgroundImage: `url(${bgGrid})`}}
@@ -49,6 +50,9 @@ export function Home() {
                 <DealOfTheDays/>
             </div>
 
+            <div className="mx-auto max-w-[1240px] py-7 px-10">
+                <BestSellerProducts />
+            </div>
         </div>
     );
 }

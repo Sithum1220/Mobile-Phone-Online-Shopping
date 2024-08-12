@@ -29,7 +29,7 @@ export function DealOfTheDays() {
     }, []);
 
     return (
-        <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 py-7">
+        <div className="mx-auto max-w-[1240px] px-6 xl:px-10 py-7">
             <h1 className="text-xl sm:text-2xl font-light mb-4">Deal of the days</h1>
             <div className="flex flex-col lg:flex-row gap-4">
                 <div className="p-4 bg-white shadow-md border-2 flex flex-col sm:flex-row border-gray-200 w-full lg:w-3/4 rounded-lg">
