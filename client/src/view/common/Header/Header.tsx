@@ -3,7 +3,7 @@ import React from "react";
 
 export function Header() {
     return (
-        <div className="sticky">
+        <div className="sticky top-0 z-40 bg-white shadow-xl">
             <div className="mx-auto flex max-w-[1240px] px-10 py-7 justify-center flex-col lg:flex-row
             lg:justify-between items-center">
                 <img src={logo} className="w-[140px]" alt="Devicer logo" />

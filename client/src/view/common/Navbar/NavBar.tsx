@@ -7,7 +7,7 @@ export function NavBar() {
 
 
     return (
-        <div className="max-w-full bg-[#F2F2F2]">
+        <div className="max-w-full bg-[#F2F2F2] sticky top-0 z-40">
             <div
                 className=" md:flex justify-between items-center max-w-[1240px] mx-auto py-2 md:px-10 text-black
                 text-opacity-50">
