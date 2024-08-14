@@ -1,11 +1,26 @@
 import logo from '../../../images/devicer-logo.png';
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 
 export function Header() {
     const [showFeaturesPopup, setShowFeaturesPopup] = useState(false);
+    const [hasScrolled, setHasScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset;
+            if (scrollTop > 0) {
+                setHasScrolled(true);
+            } else {
+                setHasScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     return (
-        <div className="sticky top-0 z-40 bg-white shadow-xl">
+        <div className={`sticky top-0 z-40 bg-white ${hasScrolled ? 'shadow-xl' : ''}`}>
             <div className="mx-auto flex max-w-[1240px] px-10 py-7 justify-center flex-col lg:flex-row
             lg:justify-between items-center">
                 <img src={logo} className="w-[140px]" alt="Devicer logo"/>

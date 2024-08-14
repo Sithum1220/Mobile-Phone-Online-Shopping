@@ -11,6 +11,9 @@ module.exports = {
         primary: '#3452FF',
         secondary: '#2A2A2A',
         text: '#A6A4A6'
+      },
+      fontWeight: {
+        'extra-light': '20',
       }
     },
   },
