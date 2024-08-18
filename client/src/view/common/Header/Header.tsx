@@ -93,7 +93,9 @@ export function Header() {
                                 <Link to={"/about"}>
                                 <li className="block px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm font-thin transition duration-300">About</li>
                                 </Link>
+                                <Link to={"/contact"}>
                                 <li className="block px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm font-thin transition duration-300">Contact</li>
+                                </Link>
                                 <li className="block px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm font-thin transition duration-300">News</li>
                             </ul>
 
