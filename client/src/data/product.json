@@ -1,8 +1,10 @@
 [
   {
+    "id": 1,
     "category": "Recent",
     "product": [
       {
+        "id": 1,
         "itemCategory": "Cell Phones, Xiaomi",
         "title": "Xiaomi Mi Mix 2",
         "image": "Xiaomi_Mi_Mix_2.png",
@@ -30,6 +32,7 @@
         }
       },
       {
+        "id": 2,
         "itemCategory": "Cell Phones, OnePlus",
         "title": "OnePlus 5T",
         "image": "OnePlus_5T.png",
@@ -57,6 +60,7 @@
         }
       },
       {
+        "id": 3,
         "itemCategory": "Computer Hardware, Daydream View",
         "title": "Google Daydream VR",
         "image": "Google_Daydream_VR.png",
@@ -84,6 +88,7 @@
         }
       },
       {
+        "id": 4,
         "itemCategory": "Acoustics, Computer Hardware",
         "title": "JBL Pulse 3",
         "image": "JBL_Pulse_3.png",
@@ -113,9 +118,11 @@
     ]
   },
   {
+    "id": 2,
     "category": "Featured",
     "product": [
       {
+        "id": 1,
         "itemCategory": "Apple, Smart Watches",
         "title": "Misfit Shine 2",
         "image": "Misfit_Shine_2.png",
@@ -143,12 +150,35 @@
         }
       },
       {
+        "id": 2,
         "itemCategory": "Computer Hardware, Keyboards",
         "title": "Bluetooth Keyboard",
         "image": "Bluetooth_Keyboard.png",
-        "price": "$ 120.00"
+        "price": "$ 120.00",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
+        "description": [
+          {
+            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
+            "features": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "Cras sodales nisi pretium placerat tempus.",
+              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
+              "Nunc condimentum tortor non fringilla congue.",
+              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
+            ],
+            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
+          }
+        ],
+        "additionalInfo": {
+          "color": "Glossy Black",
+          "height": "16.2",
+          "volume": "485 ml",
+          "width": "22.6",
+          "productType": "LCD Monitor"
+        }
       },
       {
+        "id": 3,
         "itemCategory": "Smart Watches, Sony",
         "title": "Sony Watch Series F",
         "image": "Sony_Watch_Series_F.png",
@@ -176,6 +206,7 @@
         }
       },
       {
+        "id": 4,
         "itemCategory": "Cell Phones, Motorola",
         "title": "Nokia 6 Dual Sim Tempered Blue",
         "image": "Nokia 6 Dual Sim_Tempered_Blue.png",
@@ -205,9 +236,11 @@
     ]
   },
   {
+    "id": 3,
     "category": "BestSeller",
     "product": [
       {
+        "id": 1,
         "itemCategory": "Apple, Smart Watches",
         "title": "Misfit Shine 2",
         "image": "Misfit_Shine_2.png",
@@ -235,6 +268,7 @@
         }
       },
       {
+        "id": 2,
         "itemCategory": "Computer Hardware, Keyboards",
         "title": "Bluetooth Keyboard",
         "image": "Bluetooth_Keyboard.png",
@@ -262,6 +296,7 @@
         }
       },
       {
+        "id": 3,
         "itemCategory": "Smart Watches, Sony",
         "title": "Sony Watch Series F",
         "image": "Sony_Watch_Series_F.png",
@@ -289,6 +324,7 @@
         }
       },
       {
+        "id": 4,
         "itemCategory": "Cell Phones, Motorola",
         "title": "Nokia 6 Dual Sim Tempered Blue",
         "image": "Nokia 6 Dual Sim_Tempered_Blue.png",
@@ -316,6 +352,7 @@
         }
       },
       {
+        "id": 5,
         "itemCategory": "Cell Phones, Xiaomi",
         "title": "Xiaomi Mi Mix 2",
         "image": "Xiaomi_Mi_Mix_2.png",
@@ -343,6 +380,7 @@
         }
       },
       {
+        "id": 6,
         "itemCategory": "Cell Phones, OnePlus",
         "title": "OnePlus 5T",
         "image": "OnePlus_5T.png",
@@ -370,6 +408,7 @@
         }
       },
       {
+        "id": 7,
         "itemCategory": "Computer Hardware, Daydream View",
         "title": "Google Daydream VR",
         "image": "Google_Daydream_VR.png",
@@ -397,6 +436,7 @@
         }
       },
       {
+        "id": 8,
         "itemCategory": "Acoustics, Computer Hardware",
         "title": "JBL Pulse 3",
         "image": "JBL_Pulse_3.png",

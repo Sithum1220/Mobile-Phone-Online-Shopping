@@ -4,7 +4,7 @@ import './index.css';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store from "./view/redux/CounterSlice/Store";
+import store from "./view/redux/Store/Store";
 import {Provider} from "react-redux";
 
 const root = ReactDOM.createRoot(

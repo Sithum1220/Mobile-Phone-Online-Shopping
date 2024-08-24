@@ -77,7 +77,7 @@ export function RecentFeaturedProducts() {
                                             d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.817 1.508 8.213L12 18.897l-7.444 4.439 1.508-8.213L.587 9.306l8.332-1.151z"/>
                                     </svg>
                                 </div>
-                                <AddToCartButton/>
+                                <AddToCartButton product={product}/>
                             </div>
                         </div>
                     </div>

@@ -5,12 +5,17 @@ import ProductItem from "../../../data/product.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {AddToCartButton} from "../AddToCartButton/AddToCartButton";
+import {useSelector} from "react-redux";
+import {RootState} from "../../redux/Store/Store";
+
 
 export function BestSeller() {
     const [bestSeller, setBestSeller] =
         useState<RootObjectProduct[]>([]);
     const [currentSet, setCurrentSet] = useState(0);
     const sliderRef = useRef<Slider>(null);
+
+    // const items = useSelector((state: RootState) => state.cart.items);
 
     useEffect(() => {
         const filtered: RootObjectProduct[] = ProductItem.find(item =>
@@ -112,7 +117,7 @@ export function BestSeller() {
                                                 18.897l-7.444 4.439 1.508-8.213L.587 9.306l8.332-1.151z"/>
                                         </svg>
                                     </div>
-                                    <AddToCartButton/>
+                                    <AddToCartButton product={product}/>
                                 </div>
                             </div>
                         </div>
