@@ -1,9 +1,10 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, {useEffect, useState, useRef} from "react";
 import Slider from "react-slick";
-import { RootObjectProduct } from "../../../model/Product";
+import {RootObjectProduct} from "../../../model/Product";
 import ProductItem from "../../../data/product.json";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {AddToCartButton} from "../AddToCartButton/AddToCartButton";
 
 export function BestSeller() {
     const [bestSeller, setBestSeller] =
@@ -111,9 +112,7 @@ export function BestSeller() {
                                                 18.897l-7.444 4.439 1.508-8.213L.587 9.306l8.332-1.151z"/>
                                         </svg>
                                     </div>
-                                    <div className="inline-block border-2 border-gray-200 rounded-full py-1 px-4 mt-2">
-                                        <button className="text-xs lg:text-sm font-light">ADD TO CART</button>
-                                    </div>
+                                    <AddToCartButton/>
                                 </div>
                             </div>
                         </div>

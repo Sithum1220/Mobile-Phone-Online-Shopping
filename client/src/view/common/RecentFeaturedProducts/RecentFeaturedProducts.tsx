@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import ProductItem from '../../../data/product.json';
 import {RootObjectProduct} from "../../../model/Product";
+import {AddToCartButton} from "../AddToCartButton/AddToCartButton";
 
 export function RecentFeaturedProducts() {
     const tabs = ['Recent', 'Featured', 'Top Rated'];
@@ -76,9 +77,7 @@ export function RecentFeaturedProducts() {
                                             d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.817 1.508 8.213L12 18.897l-7.444 4.439 1.508-8.213L.587 9.306l8.332-1.151z"/>
                                     </svg>
                                 </div>
-                                <div className="inline-block border-2 border-gray-200 rounded-full py-1 px-4 mt-2">
-                                    <button className="text-xs lg:text-sm font-light">ADD TO CART</button>
-                                </div>
+                                <AddToCartButton/>
                             </div>
                         </div>
                     </div>
