@@ -8,5 +8,20 @@ export interface RootObjectProduct {
 	itemCategory: string;
 	title: string;
 	image: string;
-	price: string;
+	price: number;
+	details: string;
+	qty: number;
+	description: {
+		description01: string;
+		features: string[];
+		description02: string;
+	}[];
+	additionalInfo: {
+		color: string;
+		height: string;
+		volume: string;
+		width: string;
+		productType: string;
+	};
+
 }

@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import { increment } from '../../redux/CounterSlice/CounterSlice';
 import { RootObjectProduct } from "../../../model/Product";
 import {addItem} from "../../redux/CartItemSlice/CartItemSlice";
+import {useNavigate} from "react-router-dom";
 
 interface AddToCartButtonProps {
     product: RootObjectProduct;
@@ -10,6 +11,7 @@ interface AddToCartButtonProps {
 
 export const AddToCartButton = ({ product }: AddToCartButtonProps) => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const [isButtonActive, setIsButtonActive] = useState<boolean>(true);
 
 
@@ -20,7 +22,7 @@ export const AddToCartButton = ({ product }: AddToCartButtonProps) => {
     };
 
     const handleViewCart = () => {
-
+        navigate('/cart')
     };
 
     return (

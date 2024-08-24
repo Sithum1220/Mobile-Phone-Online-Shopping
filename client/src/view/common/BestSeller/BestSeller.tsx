@@ -18,6 +18,7 @@ export function BestSeller() {
     // const items = useSelector((state: RootState) => state.cart.items);
 
     useEffect(() => {
+        // @ts-ignore
         const filtered: RootObjectProduct[] = ProductItem.find(item =>
             item.category === "BestSeller")?.product || [];
         setBestSeller(filtered);
@@ -93,7 +94,7 @@ export function BestSeller() {
                                 <div className="text-center">
                                     <h3 className="text-xs lg:text-sm mb-2 text-primary">{product.itemCategory}</h3>
                                     <h1 className="font-light text-sm lg:text-base mb-1">{product.title}</h1>
-                                    <h3 className="text-sm lg:text-base mb-2">{product.price}</h3>
+                                    <h3 className="text-sm lg:text-base mb-2">{`$ ${(product.price).toFixed(2)}`}</h3>
                                     <div className="flex justify-center mb-3">
                                         {[...Array(4)].map((_, i) => (
                                             <svg
@@ -124,6 +125,11 @@ export function BestSeller() {
                     </div>
                 ))}
             </Slider>
+            {/*<ul>*/}
+            {/*    {items.map((item, index) => (*/}
+            {/*        <li key={index}>{item.price}</li>*/}
+            {/*    ))}*/}
+            {/*</ul>*/}
         </div>
     );
 }

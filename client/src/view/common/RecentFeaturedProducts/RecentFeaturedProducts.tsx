@@ -9,6 +9,7 @@ export function RecentFeaturedProducts() {
     const [filteredProducts, setFilteredProducts] = useState<RootObjectProduct[]>([]);
 
     useEffect(() => {
+        // @ts-ignore
         const filtered: RootObjectProduct[] = ProductItem.find(item => item.category === activeTab)?.product || [];
         setFilteredProducts(filtered);
     }, [activeTab]);
@@ -55,7 +56,7 @@ export function RecentFeaturedProducts() {
                             <div className="text-center">
                                 <h3 className="text-xs lg:text-sm mb-2 text-primary">{product.itemCategory}</h3>
                                 <h1 className="font-light text-sm lg:text-base mb-1">{product.title}</h1>
-                                <h3 className="text-sm lg:text-base mb-2">{product.price}</h3>
+                                <h3 className="text-sm lg:text-base mb-2">{`$ ${(product.price).toFixed(2)}`}</h3>
                                 <div className="flex justify-center mb-3">
                                     {[...Array(4)].map((_, i) => (
                                         <svg
