@@ -4,6 +4,8 @@ import { increment } from '../../redux/CounterSlice/CounterSlice';
 import { RootObjectProduct } from "../../../model/Product";
 import {addItem} from "../../redux/CartItemSlice/CartItemSlice";
 import {useNavigate} from "react-router-dom";
+import {RootState} from "../../redux/Store/Store";
+import ProductItem from "../../../data/product.json";
 
 interface AddToCartButtonProps {
     product: RootObjectProduct;
@@ -13,12 +15,22 @@ export const AddToCartButton = ({ product }: AddToCartButtonProps) => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [isButtonActive, setIsButtonActive] = useState<boolean>(true);
+    const items = useSelector((state: RootState) => state.cart.items);
 
+    useEffect(() => {
+        const filtered = items.find(item => item.title === product.title);
+        if (filtered) {
+            setIsButtonActive(false);
+
+        } else {
+            setIsButtonActive(true);
+        }
+    }, [items, product]);
 
     const handleAddToCart = () => {
-        dispatch(addItem(product))
-        dispatch(increment());
-        setIsButtonActive(false);
+        if (dispatch(addItem(product))){
+            dispatch(increment());
+        }
     };
 
     const handleViewCart = () => {

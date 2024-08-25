@@ -27,7 +27,7 @@ export function Cart() {
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{item.title}</td>
                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.price.toFixed(2)}</td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{item.qty}</td>
+                            <td className="py-4 whitespace-nowrap text-sm text-gray-500"><input className="border-[1px] px-2  w-20 py-3 rounded-xl  border-gray-300" value={`${item.qty}`} type="number"/></td>
                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${(item.qty * item.price).toFixed(2)}</td>
                         </tr>
                     ))}

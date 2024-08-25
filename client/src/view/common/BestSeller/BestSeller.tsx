@@ -125,11 +125,6 @@ export function BestSeller() {
                     </div>
                 ))}
             </Slider>
-            {/*<ul>*/}
-            {/*    {items.map((item, index) => (*/}
-            {/*        <li key={index}>{item.price}</li>*/}
-            {/*    ))}*/}
-            {/*</ul>*/}
         </div>
     );
 }
