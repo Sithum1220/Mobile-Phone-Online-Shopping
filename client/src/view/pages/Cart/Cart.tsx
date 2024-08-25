@@ -1,28 +1,37 @@
 import { RootState } from "../../redux/Store/Store";
 import { useDispatch, useSelector } from "react-redux";
+import {updateItemQty} from "../../redux/CartItemSlice/CartItemSlice"; // Adjust the import path
 import { useEffect, useState } from "react";
-import { increment } from "../../redux/CounterSlice/CounterSlice";
-import {updateItemQty} from "../../redux/CartItemSlice/CartItemSlice";
+import {total} from "../../redux/TotalPriceSlice/TotalPriceSlice";
 
 export function Cart() {
     const items = useSelector((state: RootState) => state.cart.items);
     const dispatch = useDispatch();
 
+    // Calculate the total price
+    const calculateTotal = () => {
+        return items.reduce((acc, item) => acc + item.qty * item.price, 0);
+    };
+
+    useEffect(() => {
+
+    }, [items, dispatch]);
+
     const handleQtyOnChange = (e: React.ChangeEvent<HTMLInputElement>, title: string) => {
         const newQty = parseInt(e.target.value);
         if (newQty > 0) {
             dispatch(updateItemQty({ title: title, qty: newQty }));
-            dispatch(increment());
+            const totalPrice = calculateTotal();
+            dispatch(total({ total: totalPrice }));
         }
     };
 
-    // @ts-ignore
     return (
         <div className="max-w-[1240px] mx-auto px-10 py-7">
             <h1 className="text-4xl font-light mb-6">Cart</h1>
-            <div className="overflow-x-auto rounded-t-2xl ">
-                <table className="min-w-full divide-gray-200 bg-white shadow-md rounded-lg rounded-t-2xl ">
-                    <thead className="bg-primary rounded-t-2xl ">
+            <div className="overflow-x-auto rounded-t-2xl">
+                <table className="min-w-full divide-gray-200 bg-white shadow-md rounded-lg rounded-t-2xl">
+                    <thead className="bg-primary rounded-t-2xl">
                     <tr>
                         <th className="px-6 py-6 text-left text-xs font-medium text-white uppercase tracking-wider"></th>
                         <th className="px-6 py-6 text-left text-xs font-medium text-white uppercase tracking-wider">Product</th>
@@ -44,7 +53,7 @@ export function Cart() {
                                 <input
                                     className="border-[1px] px-2 w-20 py-3 rounded-xl border-gray-300"
                                     onChange={(e) => handleQtyOnChange(e, item.title)}
-                                    value={item.qty || 1}
+                                    value={item.qty}
                                     type="number"
                                     min="1"
                                 />
@@ -54,6 +63,9 @@ export function Cart() {
                     ))}
                     </tbody>
                 </table>
+            </div>
+            <div className="mt-6 text-right">
+                <h2 className="text-2xl">Total: ${calculateTotal().toFixed(2)}</h2>
             </div>
         </div>
     );

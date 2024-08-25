@@ -24,6 +24,8 @@ export function Header() {
 
     // @ts-ignore
     const count = useSelector((state) => state.counter.value);
+    // @ts-ignore
+    const total = useSelector((state) => state.price.value);
 
     return (
         <div className={`sticky top-0 z-40 bg-white ${hasScrolled ? 'shadow-xl' : ''}`}>
@@ -72,7 +74,7 @@ export function Header() {
 
                     <div className="flex flex-col">
                         <label className="text-[12px]">Your Cart</label>
-                        <label className="text-[16px]">$0.00</label>
+                        <label className="text-[16px]">${`${(total).toFixed(2)}`}</label>
                     </div>
                 </div>
             </div>

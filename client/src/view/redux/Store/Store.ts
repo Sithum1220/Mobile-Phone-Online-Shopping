@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import counterReducer from '../CounterSlice/CounterSlice';
 import cartReducer from '../CartItemSlice/CartItemSlice'; // Import the CartItemSlice reducer
+import totalPriceReducer from '../TotalPriceSlice/TotalPriceSlice'; // Import the CartItemSlice reducer
 
 const store = configureStore({
     reducer: {
         counter: counterReducer,
         cart: cartReducer, // Add CartItemSlice reducer
+        price: totalPriceReducer, // Add CartItemSlice reducer
     },
 });
 
