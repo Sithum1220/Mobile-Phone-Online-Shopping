@@ -1,12 +1,17 @@
 import logo from '../../../images/devicer-logo.png';
 import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {RootState} from "../../redux/Store/Store";
+import {removeItem} from "../../redux/CartItemSlice/CartItemSlice";
+import {decrement} from "../../redux/CounterSlice/CounterSlice";
 
 export function Header() {
     const [showFeaturesPopup, setShowFeaturesPopup] = useState(false);
+    const [showCartPopup, setShowCartPopup] = useState(false);
     const [hasScrolled, setHasScrolled] = useState(false);
     const [cartItemCount, setCartItemCount] = useState(0);
+    const dispatch = useDispatch();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -26,6 +31,11 @@ export function Header() {
     const count = useSelector((state) => state.counter.value);
     // @ts-ignore
     const total = useSelector((state) => state.price.value);
+    const items = useSelector((state: RootState) => state.cart.items);
+    const handleRemoveItem = (title: string) => {
+        dispatch(removeItem(title));
+        dispatch(decrement());
+    };
 
     return (
         <div className={`sticky top-0 z-40 bg-white ${hasScrolled ? 'shadow-xl' : ''}`}>
@@ -49,10 +59,14 @@ export function Header() {
                         130.96q53.65 53.66 130.96 53.66Z"/>
                     </svg>
                 </div>
-                <div className="flex-row items-center gap-3 hidden lg:flex">
+                <div className="flex-row relative items-center gap-3 hidden lg:flex">
                     <div className="relative">
                         <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
-                             fill="#5f6368">
+                             fill="#5f6368"
+                             onMouseEnter={() => setShowCartPopup(true)}
+                             onMouseLeave={() => setShowCartPopup(false)}
+                             className="cursor-pointer"
+                        >
                             <path d="M291.02-98.31q-26.74 0-45.22-18.81-18.49-18.82-18.49-45.71T246-208.32q18.7-18.6
                          45.43-18.6 26.72 0 45.42 18.81 18.69 18.81 18.69 45.71 0 26.89-18.81 45.49-18.82 18.6-45.71
                          18.6Zm387.69 0q-26.73 0-45.22-18.81Q615-135.94 615-162.83t18.7-45.49q18.69-18.6
@@ -66,7 +80,7 @@ export function Header() {
                         </svg>
                         {count > 0 && (
                             <span
-                                className="absolute -top-2 -right-1 bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs">
+                                className="absolute -top-2 -right-0 bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center text-xs">
                             {count}
                         </span>
                         )}
@@ -74,8 +88,81 @@ export function Header() {
 
                     <div className="flex flex-col">
                         <label className="text-[12px]">Your Cart</label>
-                        <label className="text-[16px]">${`${(total).toFixed(2)}`}</label>
+                        <label className="text-[16px] font-light text-gray-500">${`${(total).toFixed(2)}`}</label>
                     </div>
+{/*//////////////////////////////*/}
+
+                    <div
+                        className={`absolute top-full right-0 w-80 bg-transparent shadow-3xl rounded-md flex justify-start
+                                        flex-col py-4  transition-all duration-300 ease-in-out ${
+                            showCartPopup ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
+                        }`}
+                        onMouseEnter={() => setShowCartPopup(true)}
+                        onMouseLeave={() => setShowCartPopup(false)}
+                    >
+                        <div className="bg-white shadow-3xl mt-[8%] border-[1px] border-gray-300 rounded-lg py-8 p-4">
+                            <div className="flex flex-col">
+
+                                {items.length < 1  ?
+                                    (<h1 className="font-light text-sm">No products in the cart.</h1>)
+                                    :
+                                    (<div>
+                                        {items.map((item, index) => (
+                                            <div key={index} className="flex flex-row overflow-y-auto max-h-[40vh] justify-between mb-[10%]">
+                                                <div className="flex flex-row gap-6">
+                                                    <img src={require(`../../../images/product/${item.image}`)}
+                                                         className="w-10 h-10 object-cover rounded" alt={item.title}/>
+                                                    <div>
+                                                        <h2 className="whitespace-nowrap text-sm font-medium text-gray-900">{item.title}</h2>
+                                                        <h2 className="whitespace-nowrap text-xs text-gray-500">${item.price.toFixed(2)}</h2>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="whitespace-nowrap flex items-start text-sm font-medium text-gray-900">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="14px"
+                                                         viewBox="0 -960 960 960"
+                                                         width="24px" fill="#3452FF"
+                                                         className="text-primary cursor-pointer"
+                                                         onClick={() => handleRemoveItem(item.title)}>
+                                                        <path
+                                                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        ))}
+
+                                        <div>
+                                            <div className="flex flex-row gap-2 items-center">
+                                                <h1 className="font-light">Subtotal:</h1>
+                                                <h2 className="text-gray-500 font-light">${`${(total).toFixed(2)}`}</h2>
+                                            </div>
+
+                                            <div className="flex flex-row justify-between">
+                                                <div
+                                                    className="inline-block border-2 border-gray-200 rounded-full px-4 mt-[5%] hover:bg-primary hover:text-white transition-all duration-500">
+                                                    <button
+                                                        className="text-xs font-light  px-4 cursor-pointer"
+                                                    >
+                                                        VIEW CART
+                                                    </button>
+                                                </div>
+
+                                                <div
+                                                    className="inline-block border-2 border-gray-200 rounded-full px-4 mt-[5%] hover:bg-primary hover:text-white transition-all duration-500">
+                                                    <button
+                                                        className="text-xs px-4 font-light cursor-pointer"
+                                                    >
+                                                      CHECKOUT
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>)}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/*/////////////////////////////////*/}
                 </div>
             </div>
 
@@ -98,24 +185,24 @@ export function Header() {
                             Features
                         </a>
                         <div
-                            className={`absolute top-full left-0 bg-white shadow-3xl rounded-md flex justify-start
+                            className={`absolute top-full -left-1 bg-transparent shadow-3xl rounded-md flex justify-start
                                         flex-col py-4 w-44 transition-all duration-300 ease-in-out ${
                                 showFeaturesPopup ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
                             }`}
                             onMouseEnter={() => setShowFeaturesPopup(true)}
                             onMouseLeave={() => setShowFeaturesPopup(false)}
                         >
-
-                            <ul className="flex flex-col">
-                                <Link to={"/about"}>
-                                    <li className="block px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm font-thin transition duration-300">About</li>
-                                </Link>
-                                <Link to={"/contact"}>
-                                    <li className="block px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm font-thin transition duration-300">Contact</li>
-                                </Link>
-                                <li className="block px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm font-thin transition duration-300">News</li>
-                            </ul>
-
+                            <div className="bg-white border-[1px] border-gray-300 rounded-lg p-4">
+                                <ul className="flex flex-col">
+                                    <Link to={"/about"}>
+                                        <li className="block px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm font-thin transition duration-300">About</li>
+                                    </Link>
+                                    <Link to={"/contact"}>
+                                        <li className="block px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm font-thin transition duration-300">Contact</li>
+                                    </Link>
+                                    <li className="block px-4 py-2 hover:bg-gray-100 cursor-pointer text-sm font-thin transition duration-300">News</li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li><a href="#"

@@ -15,15 +15,15 @@ const CartItemSlice = createSlice({
     initialState,
     reducers: {
         addItem: (state, action: PayloadAction<RootObjectProduct>) => {
-            const existingItem = state.items.find(item => item.id === action.payload.id);
+            const existingItem = state.items.find(item => item.title === action.payload.title);
             if (existingItem) {
                 existingItem.qty += 1;
             } else {
                 state.items.push({ ...action.payload, qty: 1 });
             }
         },
-        removeItem: (state, action: PayloadAction<number>) => {
-            state.items = state.items.filter(item => item.id !== action.payload);
+        removeItem: (state, action: PayloadAction<string>) => {
+            state.items = state.items.filter(item => item.title !== action.payload);
         },
         updateItemQty: (state, action: PayloadAction<{ title: string; qty: number }>) => {
             const { title, qty } = action.payload;

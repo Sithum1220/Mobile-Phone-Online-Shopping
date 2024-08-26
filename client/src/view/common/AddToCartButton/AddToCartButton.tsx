@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from 'react-redux';
-import { increment } from '../../redux/CounterSlice/CounterSlice';
-import { RootObjectProduct } from "../../../model/Product";
+import {increment} from '../../redux/CounterSlice/CounterSlice';
+import {RootObjectProduct} from "../../../model/Product";
 import {addItem} from "../../redux/CartItemSlice/CartItemSlice";
 import {useNavigate} from "react-router-dom";
 import {RootState} from "../../redux/Store/Store";
 import ProductItem from "../../../data/product.json";
+import {total} from "../../redux/TotalPriceSlice/TotalPriceSlice";
 
 interface AddToCartButtonProps {
     product: RootObjectProduct;
 }
 
-export const AddToCartButton = ({ product }: AddToCartButtonProps) => {
+export const AddToCartButton = ({product}: AddToCartButtonProps) => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [isButtonActive, setIsButtonActive] = useState<boolean>(true);
@@ -19,22 +20,22 @@ export const AddToCartButton = ({ product }: AddToCartButtonProps) => {
 
     useEffect(() => {
         const filtered = items.find(item => item.title === product.title);
-        if (filtered) {
-            setIsButtonActive(false);
+        setIsButtonActive(!filtered); // If found, deactivate button
+        console.log(items)
 
-        } else {
-            setIsButtonActive(true);
-        }
+        const totalPrice = items.reduce((acc, item) => acc + item.qty * item.price, 0);
+        dispatch(total({total: totalPrice}));
+
     }, [items, product]);
 
     const handleAddToCart = () => {
-        if (dispatch(addItem(product))){
+        if (dispatch(addItem(product))) {
             dispatch(increment());
         }
     };
 
     const handleViewCart = () => {
-        navigate('/cart')
+        navigate('/cart');
     };
 
     return (
