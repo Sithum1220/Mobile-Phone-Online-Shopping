@@ -1,6 +1,6 @@
 import logo from '../../../images/devicer-logo.png';
 import React, {useEffect, useState} from "react";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../../redux/Store/Store";
 import {removeItem} from "../../redux/CartItemSlice/CartItemSlice";
@@ -12,7 +12,7 @@ export function Header() {
     const [hasScrolled, setHasScrolled] = useState(false);
     const [cartItemCount, setCartItemCount] = useState(0);
     const dispatch = useDispatch();
-
+    const navigate = useNavigate();
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.pageYOffset;
@@ -37,6 +37,9 @@ export function Header() {
         dispatch(decrement());
     };
 
+    const handleViewCart = () => {
+        navigate("/cart");
+    }
     return (
         <div className={`sticky top-0 z-40 bg-white ${hasScrolled ? 'shadow-xl' : ''}`}>
             <div className="mx-auto flex max-w-[1240px] px-10 py-7 justify-center flex-col lg:flex-row
@@ -65,6 +68,7 @@ export function Header() {
                              fill="#5f6368"
                              onMouseEnter={() => setShowCartPopup(true)}
                              onMouseLeave={() => setShowCartPopup(false)}
+                             onClick={handleViewCart}
                              className="cursor-pointer"
                         >
                             <path d="M291.02-98.31q-26.74 0-45.22-18.81-18.49-18.82-18.49-45.71T246-208.32q18.7-18.6
@@ -90,7 +94,7 @@ export function Header() {
                         <label className="text-[12px]">Your Cart</label>
                         <label className="text-[16px] font-light text-gray-500">${`${(total).toFixed(2)}`}</label>
                     </div>
-{/*//////////////////////////////*/}
+                    {/*//////////////////////////////*/}
 
                     <div
                         className={`absolute top-full right-0 w-80 bg-transparent shadow-3xl rounded-md flex justify-start
@@ -103,35 +107,38 @@ export function Header() {
                         <div className="bg-white shadow-3xl mt-[8%] border-[1px] border-gray-300 rounded-lg py-8 p-4">
                             <div className="flex flex-col">
 
-                                {items.length < 1  ?
+                                {items.length < 1 ?
                                     (<h1 className="font-light text-sm">No products in the cart.</h1>)
                                     :
                                     (<div>
-                                        {items.map((item, index) => (
-                                            <div key={index} className="flex flex-row overflow-y-auto max-h-[40vh] justify-between mb-[10%]">
-                                                <div className="flex flex-row gap-6">
-                                                    <img src={require(`../../../images/product/${item.image}`)}
-                                                         className="w-10 h-10 object-cover rounded" alt={item.title}/>
-                                                    <div>
-                                                        <h2 className="whitespace-nowrap text-sm font-medium text-gray-900">{item.title}</h2>
-                                                        <h2 className="whitespace-nowrap text-xs text-gray-500">${item.price.toFixed(2)}</h2>
+                                        <div className="overflow-y-auto max-h-[28vh]">
+                                            {items.map((item, index) => (
+                                                <div key={index} className="flex flex-row  justify-between mb-[10%]">
+                                                    <div className="flex flex-row gap-6">
+                                                        <img src={require(`../../../images/product/${item.image}`)}
+                                                             className="w-10 h-10 object-cover rounded"
+                                                             alt={item.title}/>
+                                                        <div>
+                                                            <h2 className="whitespace-nowrap text-sm font-medium text-gray-900">{item.title}</h2>
+                                                            <h2 className="whitespace-nowrap text-xs text-gray-500">${item.price.toFixed(2)}</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        className="whitespace-nowrap  flex items-start text-sm font-medium text-gray-900">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" height="14px"
+                                                             viewBox="0 -960 960 960"
+                                                             width="24px" fill="#3452FF"
+                                                             className="text-primary cursor-pointer"
+                                                             onClick={() => handleRemoveItem(item.title)}>
+                                                            <path
+                                                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                                                        </svg>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    className="whitespace-nowrap flex items-start text-sm font-medium text-gray-900">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" height="14px"
-                                                         viewBox="0 -960 960 960"
-                                                         width="24px" fill="#3452FF"
-                                                         className="text-primary cursor-pointer"
-                                                         onClick={() => handleRemoveItem(item.title)}>
-                                                        <path
-                                                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                        ))}
+                                            ))}
+                                        </div>
 
-                                        <div>
+                                        <div className="pt-[12%]">
                                             <div className="flex flex-row gap-2 items-center">
                                                 <h1 className="font-light">Subtotal:</h1>
                                                 <h2 className="text-gray-500 font-light">${`${(total).toFixed(2)}`}</h2>
@@ -142,6 +149,7 @@ export function Header() {
                                                     className="inline-block border-2 border-gray-200 rounded-full px-4 mt-[5%] hover:bg-primary hover:text-white transition-all duration-500">
                                                     <button
                                                         className="text-xs font-light  px-4 cursor-pointer"
+                                                        onClick={handleViewCart}
                                                     >
                                                         VIEW CART
                                                     </button>
@@ -152,7 +160,7 @@ export function Header() {
                                                     <button
                                                         className="text-xs px-4 font-light cursor-pointer"
                                                     >
-                                                      CHECKOUT
+                                                        CHECKOUT
                                                     </button>
                                                 </div>
                                             </div>
