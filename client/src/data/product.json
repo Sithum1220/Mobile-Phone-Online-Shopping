@@ -1,468 +1,1194 @@
 [
   {
     "id": 1,
-    "category": "Recent",
-    "product": [
+    "category": "Cell Phones",
+    "brand": "Apple",
+    "image": "iphone_15_black.png",
+    "model": "Apple Iphone 15",
+    "featured": false,
+    "sale": false,
+    "newPrice": 0,
+    "price": 790,
+    "variants": [
       {
-        "id": 1,
-        "itemCategory": "Cell Phones, Xiaomi",
-        "title": "Xiaomi Mi Mix 2",
-        "image": "Xiaomi_Mi_Mix_2.png",
-        "price": 55.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
+        "color": "Pink",
+        "image": "iphone_15_pink.png",
+        "storage": 128,
+        "ram": 8,
+        "signal": "5g"
       },
       {
-        "id": 2,
-        "itemCategory": "Cell Phones, OnePlus",
-        "title": "OnePlus 5T",
-        "image": "OnePlus_5T.png",
-        "price": 120.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
+        "color": "Black",
+        "image": "iphone_15_black.png",
+        "storage": 128,
+        "ram": 8,
+        "signal": "5g"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sihum Imesh",
+        "date": "October 12, 2023",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
       },
       {
-        "id": 3,
-        "itemCategory": "Computer Hardware, Daydream View",
-        "title": "Google Daydream VR",
-        "image": "Google_Daydream_VR.png",
-        "price": 400.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
+        "name": "Samudhi Randula",
+        "date": "November 09, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
       },
       {
-        "id": 4,
-        "itemCategory": "Acoustics, Computer Hardware",
-        "title": "JBL Pulse 3",
-        "image": "JBL_Pulse_3.png",
-        "price": 420.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
+        "name": "Dulika Pushpakumari",
+        "date": "July 24, 2024",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Suranjith Kumara",
+        "date": "May 20, 2024",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      }
+    ],
+    "specification": [
+      {
+        "BODY": {
+          "mainTitle": "BODY",
+          "subTitles": [
+            "Dimensions",
+            "Weight",
+            "Build",
+            "SIM"
+          ],
+          "details": [
+            "147.6 x 71.6 x 7.8 mm (5.81 x 2.82 x 0.31 in)",
+            "171 g (6.03 oz)",
+            "Glass front (Corning-made glass), glass back (Corning-made glass), aluminum frame",
+            "Nano-SIM and eSIM - International Dual eSIM with multiple numbers - USA Dual SIM (Nano-SIM, dual stand-by) - China",
+            "IP68 dust/water resistant (up to 6m for 30 min) Apple Pay (Visa, MasterCard, AMEX certified)"
+          ]
+        },
+        "NETWORK": {
+          "mainTitle": "NETWORK",
+          "subTitles": [
+            "Technology"
+          ],
+          "details": [
+            "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+          ]
+        },
+        "LAUNCH": {
+          "mainTitle": "LAUNCH",
+          "subTitles": [
+            "Announced",
+            "Status"
+          ],
+          "details": [
+            "2023, September 12",
+            "Coming soon. Exp. release 2023, September 22"
+          ]
+        },
+        "DISPLAY": {
+          "mainTitle": "DISPLAY",
+          "subTitles": [
+            "Type",
+            "Size",
+            "Resolution",
+            "Protection"
+          ],
+          "details": [
+            "Super Retina XDR OLED, HDR10, Dolby Vision, 1000 nits (HBM), 2000 nits (peak)",
+            "6.1 inches, 91.3 cm2 (~86.4% screen-to-body ratio)",
+            "1179 x 2556 pixels, 19.5:9 ratio (~461 ppi density)",
+            "Ceramic Shield glass"
+          ]
         }
       }
-    ]
+    ],
+    "description": {
+      "Title": "Apple Iphone 15",
+      "details": "A huge leap forward for iPhone with a gorgeous new design featuring a durable, color-infused back glass and new contoured edge; the Dynamic Island; a 48MP Main camera with 2x Telephoto; and USB‑C, Dynamic Island bubbles up alerts and Live Activities — so you don’t miss them while you’re doing something else. You can track your next ride, see who’s calling, check your flight status, and so much more.",
+      "features": [
+        "Dynamic Island stays on top of it all.",
+        "Apple A16 Bionic chip",
+        "All-new 48MP Main camera",
+        "Super-high-resolution photos. 2x Telephoto.",
+        "Durable color-infused glass and aluminum design.",
+        "Charging as easy as USB-C.",
+        "All-day battery life"
+      ]
+    }
   },
   {
     "id": 2,
-    "category": "Featured",
-    "product": [
+    "category": "Cell Phones",
+    "brand": "Google Pixel",
+    "image": "Google_Pixel_8_Hazel.jpg",
+    "model": "Google Pixel 8",
+    "featured": true,
+    "sale": false,
+    "newPrice": 0,
+    "price": 1200,
+    "variants": [
       {
-        "id": 1,
-        "itemCategory": "Apple, Smart Watches",
-        "title": "Misfit Shine 2",
-        "image": "Misfit_Shine_2.png",
-        "price": 55.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
+        "color": "Hazel",
+        "image": "Google_Pixel_8_Hazel.jpg",
+        "storage": 128,
+        "ram": 8,
+        "signal": "5g"
       },
       {
-        "id": 2,
-        "itemCategory": "Computer Hardware, Keyboards",
-        "title": "Bluetooth Keyboard",
-        "image": "Bluetooth_Keyboard.png",
-        "price": 120.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
+        "color": "Rose",
+        "image": "Google_Pixel_8_rose.jpg",
+        "storage": 128,
+        "ram": 8,
+        "signal": "5g"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sihum Imesh",
+        "date": "October 12, 2023",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
       },
       {
-        "id": 3,
-        "itemCategory": "Smart Watches, Sony",
-        "title": "Sony Watch Series F",
-        "image": "Sony_Watch_Series_F.png",
-        "price": 400.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
+        "name": "Samudhi Randula",
+        "date": "November 09, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
       },
       {
-        "id": 4,
-        "itemCategory": "Cell Phones, Motorola",
-        "title": "Nokia 6 Dual Sim Tempered Blue",
-        "image": "Nokia 6 Dual Sim_Tempered_Blue.png",
-        "price": 420.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
+        "name": "Dulika Pushpakumari",
+        "date": "July 24, 2024",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Suranjith Kumara",
+        "date": "May 20, 2024",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Nuwan Madhushanka",
+        "date": "May 20, 2024",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      }
+    ],
+    "specification": [
+      {
+        "BODY": {
+          "mainTitle": "BODY",
+          "subTitles": [
+            "Dimensions",
+            "Weight",
+            "Build",
+            "SIM"
+          ],
+          "details": [
+            "150.5 x 70.8 x 8.9 mm (5.93 x 2.79 x 0.35 in)",
+            "187 g (6.60 oz)",
+            "Glass front (Gorilla Glass Victus), glass back (Gorilla Glass Victus), aluminum frame",
+            "Nano-SIM and eSIM",
+            "IP68 dust/water resistant (up to 1.5m for 30 min)"
+          ]
+        },
+        "NETWORK": {
+          "mainTitle": "NETWORK",
+          "subTitles": [
+            "Technology"
+          ],
+          "details": [
+            "GSM / HSPA / LTE / 5G"
+          ]
+        },
+        "LAUNCH": {
+          "mainTitle": "LAUNCH",
+          "subTitles": [
+            "Announced",
+            "Status"
+          ],
+          "details": [
+            "2023, October 04",
+            "Coming soon. Exp. release 2023, October 12"
+          ]
+        },
+        "DISPLAY": {
+          "mainTitle": "DISPLAY",
+          "subTitles": [
+            "Type",
+            "Size",
+            "Resolution",
+            "Protection"
+          ],
+          "details": [
+            "OLED, 120Hz, HDR10+, 1400 nits (HBM), 2000 nits (peak)",
+            "6.2 inches, 91.1 cm2 (~85.5% screen-to-body ratio)",
+            "1080 x 2400 pixels, 20:9 ratio (~428 ppi density)",
+            "Corning Gorilla Glass Victus",
+            "Always-on display"
+          ]
         }
       }
-    ]
+    ],
+    "description": {
+      "Title": "Google Pixel 8",
+      "details": "Google Tensor G3 is Pixel’s most powerful chip yet. It’s custom-designed with Google AI for cutting-edge photo and video features and smarter ways to help throughout the day. And it makes Pixel 8 super-fast and efficient.Use Magic Editor in Google Photos, that’s coming up soon to add custom edits and studio-quality enhancements to any photo. Improve lighting and background, move a subject, and more, with just a few taps. Pixel’s best take combines similar photos into one fantastic picture where everyone looks their best. Additionally, camera features such as Magic Eraser, Photo Unblur and Real Tone help you express yourself better.",
+      "features": [
+        "8GB RAM | 128GB ROM",
+        "15.75 cm (6.2 inch) Full HD+ Display",
+        "50MP + 12MP | 10.5MP Front Camera",
+        "4575mAh Battery",
+        "Tensor G3 Processor"
+      ]
+    }
   },
   {
     "id": 3,
-    "category": "BestSeller",
-    "product": [
+    "category": "Cell Phones",
+    "brand": "Samsung",
+    "image": "Samsung_Galaxy_S24_Ultra_Titanium_Black.png",
+    "model": "Samsung Galaxy S24 Ultra",
+    "featured": true,
+    "sale": false,
+    "newPrice": 0,
+    "price": 1490,
+    "variants": [
       {
-        "id": 1,
-        "itemCategory": "Apple, Smart Watches",
-        "title": "Misfit Shine 2",
-        "image": "Misfit_Shine_2.png",
-        "price": 55.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
+        "color": "Titanium Black",
+        "image": "Samsung_Galaxy_S24_Ultra_Titanium_Black.png",
+        "storage": 256,
+        "ram": 12,
+        "signal": "5g"
       },
       {
-        "id": 2,
-        "itemCategory": "Computer Hardware, Keyboards",
-        "title": "Bluetooth Keyboard",
-        "image": "Bluetooth_Keyboard.png",
-        "price": 120.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
+        "color": "Titanium Yellow",
+        "image": "Samsung_Galaxy_S24_Ultra_Titanium_Black.png",
+        "storage": 256,
+        "ram": 12,
+        "signal": "5g"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sihum Imesh",
+        "date": "October 12, 2023",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
       },
       {
-        "id": 3,
-        "itemCategory": "Smart Watches, Sony",
-        "title": "Sony Watch Series F",
-        "image": "Sony_Watch_Series_F.png",
-        "price": 400.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
+        "name": "Samudhi Randula",
+        "date": "November 09, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
       },
       {
-        "id": 4,
-        "itemCategory": "Cell Phones, Motorola",
-        "title": "Nokia 6 Dual Sim Tempered Blue",
-        "image": "Nokia 6 Dual Sim_Tempered_Blue.png",
-        "price": 420.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
-      },
+        "name": "Dulika Pushpakumari",
+        "date": "July 24, 2024",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      }
+    ],
+    "specification": [
       {
-        "id": 5,
-        "itemCategory": "Cell Phones, Xiaomi",
-        "title": "Xiaomi Mi Mix 2",
-        "image": "Xiaomi_Mi_Mix_2.png",
-        "price": 55.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
-      },
-      {
-        "id": 6,
-        "itemCategory": "Cell Phones, OnePlus",
-        "title": "OnePlus 5T",
-        "image": "OnePlus_5T.png",
-        "price": 120.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
-      },
-      {
-        "id": 7,
-        "itemCategory": "Computer Hardware, Daydream View",
-        "title": "Google Daydream VR",
-        "image": "Google_Daydream_VR.png",
-        "price": 400.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
-        }
-      },
-      {
-        "id": 8,
-        "itemCategory": "Acoustics, Computer Hardware",
-        "title": "JBL Pulse 3",
-        "image": "JBL_Pulse_3.png",
-        "price": 420.00,
-        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut.",
-        "description": [
-          {
-            "description01": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tristique nibh ac ligula dapibus, quis ornare felis malesuada. Cras in feugiat diam. Donec euismod purus lorem, vel euismod sem pharetra at. Integer elit nulla, aliquet eget nisi lobortis, varius accumsan dui. Quisque semper dolor nibh, ac aliquet quam vehicula a. Aenean id consequat sapien, venenatis feugiat neque. Donec sit amet elit non ante eleifend sagittis sit amet eget mauris. Vestibulum nec pretium leo, sed lacinia odio. Vestibulum et tempor nunc. Etiam mattis porttitor lectus, vel egestas nunc dignissim ut. Sed mollis nisi nisl, porta egestas lectus porttitor quis. Sed arcu neque, consectetur ut bibendum at, tincidunt ut elit.",
-            "features": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Cras sodales nisi pretium placerat tempus.",
-              "Pellentesque id erat sodales, mollis turpis sed, bibendum justo.",
-              "Nunc condimentum tortor non fringilla congue.",
-              "Donec tempus odio eu libero mattis, in posuere nisl vulputate."
-            ],
-            "description02": "Imperdiet mi. Suspendisse mollis leo in sapien venenatis, ac congue ex auctor. Donec dapibus ipsum ex, eu fringilla arcu elementum at. Nulla quis urna pharetra, tincidunt sem a, pharetra mauris. Duis vel posuere tortor. Integer at porttitor quam. Sed consequat nec dui ut feugiat. Phasellus feugiat non ante a lacinia. Sed accumsan magna eu dapibus tempus. Etiam euismod nulla sed ex ultrices gravida."
-          }
-        ],
-        "additionalInfo": {
-          "color": "Glossy Black",
-          "height": "16.2",
-          "volume": "485 ml",
-          "width": "22.6",
-          "productType": "LCD Monitor"
+        "BODY": {
+          "mainTitle": "BODY",
+          "subTitles": [
+            "Dimensions",
+            "Weight",
+            "Build",
+            "SIM"
+          ],
+          "details": [
+            "162.3 x 79 x 8.6 mm (6.39 x 3.11 x 0.34 in)",
+            "232 g or 233 g (8.18 oz)",
+            "Glass front (Gorilla Glass Armor), glass back (Gorilla Glass), titanium frame",
+            "Nano-SIM and eSIM or Dual SIM (2 Nano-SIMs and eSIM, dual stand-by)",
+            "IP68 dust/water resistant (up to 1.5m for 30 min) Stylus (Bluetooth integration, accelerometer, gyro)"
+          ]
+        },
+        "NETWORK": {
+          "mainTitle": "NETWORK",
+          "subTitles": [
+            "Technology"
+          ],
+          "details": [
+            "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+          ]
+        },
+        "LAUNCH": {
+          "mainTitle": "LAUNCH",
+          "subTitles": [
+            "Announced",
+            "Status"
+          ],
+          "details": [
+            "2024, January 17",
+            "Coming soon. Exp. release 2024, January 25"
+          ]
+        },
+        "DISPLAY": {
+          "mainTitle": "DISPLAY",
+          "subTitles": [
+            "Type",
+            "Size",
+            "Resolution",
+            "Protection"
+          ],
+          "details": [
+            "Dynamic LTPO AMOLED 2X, 120Hz, HDR10+, 2600 nits (peak)",
+            "6.8 inches, 113.5 cm2 (~88.5% screen-to-body ratio)",
+            "1440 x 3120 pixels, 19.5:9 ratio (~505 ppi density)",
+            "Corning Gorilla Glass Armor",
+            "Always-on display"
+          ]
         }
       }
-    ]
+    ],
+    "description": {
+      "Title": "Samsung Galaxy S24 Ultra",
+      "details": "Do more with the most epic Galaxy yet. From satisfying your curiosity on the spot with Circle to Search with Google, to zooming in to capture stunning low light photos, unleash new ways to create, connect and more with Galaxy S24 Ultra. Epic, just like that.Plus, a flatter screen means a fuller experience that allows you to see more of what you love on the edge-to-edge display.Meet the industry standard for camera quality, with the most megapixels on a smartphone. ProVisual engine improves color tone and brings out detail in every photo.",
+      "features": [
+        "6.8 -inch Dynamic LTPO AMOLED 2X screen",
+        "Snapdragon 8 Gen 3",
+        "Li-lon 5000 mAh, non-removable",
+        "Built-in S Pen writes a whole new chapter",
+        "Real Easy, Real-Time Translations",
+        "New Era of Mobile AI",
+        "200MP camera, the highest resolution on a phone"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "category": "Cell Phones",
+    "brand": "Xiaomi",
+    "image": "Google_Pixel_8_Hazel.jpg",
+    "model": "Xiaomi Redmi Note 13 Pro Plus 5G",
+    "featured": false,
+    "sale": false,
+    "newPrice": 0,
+    "price": 660,
+    "variants": [
+      {
+        "color": "Black",
+        "image": "Xiaomi_Redmi_Note_13_Pro_Plus_5G_Black.jpg",
+        "storage": 256,
+        "ram": 8,
+        "signal": "5g"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sihum Imesh",
+        "date": "October 12, 2023",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Samudhi Randula",
+        "date": "November 09, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      }
+    ],
+    "specification": [
+      {
+        "BODY": {
+          "mainTitle": "BODY",
+          "subTitles": [
+            "Dimensions",
+            "Weight",
+            "Build",
+            "SIM"
+          ],
+          "details": [
+            "161.4 x 74.2 x 8.9 mm (6.35 x 2.92 x 0.35 in)",
+            "199 g or 204.5 g (7.02 oz)",
+            "Glass front (Gorilla Glass Victus), glass back or silicone polymer back (eco leather), aluminum frame",
+            "Nano-SIM, eSIM or Dual SIM (Nano-SIM, dual stand-by)",
+            "IP68 dust/water resistant (up to 1.5m for 30 min)"
+          ]
+        },
+        "NETWORK": {
+          "mainTitle": "NETWORK",
+          "subTitles": [
+            "Technology"
+          ],
+          "details": [
+            "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+          ]
+        },
+        "LAUNCH": {
+          "mainTitle": "LAUNCH",
+          "subTitles": [
+            "Announced",
+            "Status"
+          ],
+          "details": [
+            "2023, September 21",
+            "Available. Released 2023, September 21"
+          ]
+        },
+        "DISPLAY": {
+          "mainTitle": "DISPLAY",
+          "subTitles": [
+            "Type",
+            "Size",
+            "Resolution",
+            "Protection"
+          ],
+          "details": [
+            "AMOLED, 68B colors, 120Hz, Dolby Vision, HDR10+, 1800 nits (peak)",
+            "6.67 inches, 107.4 cm2 (~89.7% screen-to-body ratio)",
+            "1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "Corning Gorilla Glass Victus",
+            "Always-on display"
+          ]
+        }
+      }
+    ],
+    "description": {
+      "Title": "Xiaomi Redmi Note 13 Pro Plus 5G",
+      "details": "Redmi Note 13 Pro+ 5G is equipped with a flagship-level 200MP main camera and supports Super QPD for faster and more accurate focusing. The powerful combination of OIS and EIS dramatically improves anti-shaking performance. With Xiaomi’s enhanced imaging capabilities, you can produce a masterpiece every time you press the shutter.Witness innovation unfolds with the introduction of the first-ever 3D curved display on the Redmi Note series. The 4-sided ultra-thin narrow bezel and a 25-degree curvature not only enhance the visual appeal but are meticulously designed for the perfect hand grip. Immerse yourself in a display that doesn’t just meet expectations; it exceeds them.",
+      "features": [
+        "Ultra-clear 200MP camera with OIS",
+        "5K 120Hz AMOLED curved display",
+        "MediaTek Dimensity 7200-Ultra",
+        "All-star durability",
+        "120W HyperCharge with 5000mAh (typ) battery",
+        "IP68 dust and water resistance"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "category": "Cell Phones",
+    "brand": "Samsung",
+    "image": "Google_Pixel_8_Hazel.jpg",
+    "model": "Samsung Galaxy Z Fold 6",
+    "featured": false,
+    "sale": false,
+    "newPrice": 3000,
+    "price": 3200,
+    "variants": [
+      {
+        "color": "Pink",
+        "image": "Samsung_Galaxy_Z_Fold_6_Pink.jpg",
+        "storage": 256,
+        "ram": 8,
+        "signal": "5g"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sihum Imesh",
+        "date": "October 12, 2023",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Samudhi Randula",
+        "date": "November 09, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Dulika Pushpakumari",
+        "date": "July 23, 2024",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Suranjith Kumara",
+        "date": "May 09, 2024",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Nuwan Madhushanka",
+        "date": "March 12, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Sudeshika Dulanjali",
+        "date": "November 09, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      }
+    ],
+    "specification": [
+      {
+        "BODY": {
+          "mainTitle": "BODY",
+          "subTitles": [
+            "Dimensions",
+            "Weight",
+            "Build",
+            "SIM"
+          ],
+          "details": [
+            "161.4 x 74.2 x 8.9 mm (6.35 x 2.92 x 0.35 in)",
+            "199 g or 204.5 g (7.02 oz)",
+            "Glass front (Gorilla Glass Victus), glass back or silicone polymer back (eco leather), aluminum frame",
+            "Nano-SIM, eSIM or Dual SIM (Nano-SIM, dual stand-by)",
+            "IP68 dust/water resistant (up to 1.5m for 30 min)"
+          ]
+        },
+        "NETWORK": {
+          "mainTitle": "NETWORK",
+          "subTitles": [
+            "Technology"
+          ],
+          "details": [
+            "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+          ]
+        },
+        "LAUNCH": {
+          "mainTitle": "LAUNCH",
+          "subTitles": [
+            "Announced",
+            "Status"
+          ],
+          "details": [
+            "2023, September 21",
+            "Available. Released 2023, September 21"
+          ]
+        },
+        "DISPLAY": {
+          "mainTitle": "DISPLAY",
+          "subTitles": [
+            "Type",
+            "Size",
+            "Resolution",
+            "Protection"
+          ],
+          "details": [
+            "AMOLED, 68B colors, 120Hz, Dolby Vision, HDR10+, 1800 nits (peak)",
+            "6.67 inches, 107.4 cm2 (~89.7% screen-to-body ratio)",
+            "1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "Corning Gorilla Glass Victus",
+            "Always-on display"
+          ]
+        }
+      }
+    ],
+    "description": {
+      "Title": "Samsung Galaxy Z Fold 6",
+      "details": "The ultimate foldable smartphone offers an expansive interior screen that transforms how you interact with technology. Galaxy Z Fold 6 massive display is perfect for multitasking, gaming, and discovering new content. The innovative Circle to Search feature, powered by Galaxy AI, allows you to find exactly what you’re looking for by utilizing Google’s powerful search capabilities. The large screen provides an immersive experience that makes exploring information, watching videos, or managing tasks more enjoyable and efficient.",
+      "features": [
+        "19.3 cm (7.6 inch) QXGA+ Display",
+        "50MP + 12MP + 10MP | 10MP Front Camera",
+        "4400 mAh Lithium ion Battery",
+        "Snapdragon 8 Gen 3 Processor"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "category": "Cell Phones",
+    "brand": "Samsung",
+    "image": "OnePlus_12R_Black.jpg",
+    "model": "OnePlus 12R",
+    "featured": false,
+    "sale": true,
+    "newPrice": 440,
+    "price": 500,
+    "variants": [
+      {
+        "color": "Black",
+        "image": "OnePlus_12R_Black.jpg",
+        "storage": 256,
+        "ram": 8,
+        "signal": "5g"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sihum Imesh",
+        "date": "October 12, 2023",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Samudhi Randula",
+        "date": "November 09, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Dulika Pushpakumari",
+        "date": "July 23, 2024",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Suranjith Kumara",
+        "date": "May 09, 2024",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Nuwan Madhushanka",
+        "date": "March 12, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      }
+    ],
+    "specification": [
+      {
+        "BODY": {
+          "mainTitle": "BODY",
+          "subTitles": [
+            "Dimensions",
+            "Weight",
+            "Build",
+            "SIM"
+          ],
+          "details": [
+            "161.4 x 74.2 x 8.9 mm (6.35 x 2.92 x 0.35 in)",
+            "199 g or 204.5 g (7.02 oz)",
+            "Glass front (Gorilla Glass Victus), glass back or silicone polymer back (eco leather), aluminum frame",
+            "Nano-SIM, eSIM or Dual SIM (Nano-SIM, dual stand-by)",
+            "IP68 dust/water resistant (up to 1.5m for 30 min)"
+          ]
+        },
+        "NETWORK": {
+          "mainTitle": "NETWORK",
+          "subTitles": [
+            "Technology"
+          ],
+          "details": [
+            "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+          ]
+        },
+        "LAUNCH": {
+          "mainTitle": "LAUNCH",
+          "subTitles": [
+            "Announced",
+            "Status"
+          ],
+          "details": [
+            "2023, September 21",
+            "Available. Released 2023, September 21"
+          ]
+        },
+        "DISPLAY": {
+          "mainTitle": "DISPLAY",
+          "subTitles": [
+            "Type",
+            "Size",
+            "Resolution",
+            "Protection"
+          ],
+          "details": [
+            "AMOLED, 68B colors, 120Hz, Dolby Vision, HDR10+, 1800 nits (peak)",
+            "6.67 inches, 107.4 cm2 (~89.7% screen-to-body ratio)",
+            "1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "Corning Gorilla Glass Victus",
+            "Always-on display"
+          ]
+        }
+      }
+    ],
+    "description": {
+      "Title": "OnePlus 12R",
+      "details": "The OnePlus 12R showcases a daring design featuring a luxurious camera module and anti-fingerprint matte aluminum frame. With a seamless symphony of elegance and next-level engineering, experience smooth perfected.Being smooth has never been cooler with our largest ever cooling surface ever.11A next-gen dual vapor chamber is empowered by pioneering Laval nozzle technology. Significantly enhanced heat dissipation efficiency ensures sublimely smooth performance.",
+      "features": [
+        "4th Generation LTPO 120 Hz ProXDR Display",
+        "5500 mAh Battery + 100W SUPERVOOC",
+        "All-new Dual Cryo-velocity VC Cooling System",
+        "Qualcomm Snapdragon® 8 Gen 2",
+        "Up to 16GB LPDDR5X RAM",
+        "50MP SONY IMX890 Camera"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "category": "Cell Phones",
+    "brand": "Samsung",
+    "image": "Samsung_Galaxy_A55_5G.jpg",
+    "model": "Samsung Galaxy A55 5G",
+    "featured": false,
+    "sale": false,
+    "newPrice": 0,
+    "price": 500,
+    "variants": [
+      {
+        "color": "Ice Blue",
+        "image": "Samsung_Galaxy_A55_5G.jpg",
+        "storage": 256,
+        "ram": 12,
+        "signal": "5g"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sihum Imesh",
+        "date": "October 12, 2023",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Samudhi Randula",
+        "date": "November 09, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Dulika Pushpakumari",
+        "date": "July 23, 2024",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Suranjith Kumara",
+        "date": "May 09, 2024",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Nuwan Madhushanka",
+        "date": "March 12, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Sudeshika Dulanjali",
+        "date": "March 26, 2024",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Kasun Tharaka",
+        "date": "April 17, 2024",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      }
+    ],
+    "specification": [
+      {
+        "BODY": {
+          "mainTitle": "BODY",
+          "subTitles": [
+            "Dimensions",
+            "Weight",
+            "Build",
+            "SIM"
+          ],
+          "details": [
+            "161.4 x 74.2 x 8.9 mm (6.35 x 2.92 x 0.35 in)",
+            "199 g or 204.5 g (7.02 oz)",
+            "Glass front (Gorilla Glass Victus), glass back or silicone polymer back (eco leather), aluminum frame",
+            "Nano-SIM, eSIM or Dual SIM (Nano-SIM, dual stand-by)",
+            "IP68 dust/water resistant (up to 1.5m for 30 min)"
+          ]
+        },
+        "NETWORK": {
+          "mainTitle": "NETWORK",
+          "subTitles": [
+            "Technology"
+          ],
+          "details": [
+            "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+          ]
+        },
+        "LAUNCH": {
+          "mainTitle": "LAUNCH",
+          "subTitles": [
+            "Announced",
+            "Status"
+          ],
+          "details": [
+            "2023, September 21",
+            "Available. Released 2023, September 21"
+          ]
+        },
+        "DISPLAY": {
+          "mainTitle": "DISPLAY",
+          "subTitles": [
+            "Type",
+            "Size",
+            "Resolution",
+            "Protection"
+          ],
+          "details": [
+            "AMOLED, 68B colors, 120Hz, Dolby Vision, HDR10+, 1800 nits (peak)",
+            "6.67 inches, 107.4 cm2 (~89.7% screen-to-body ratio)",
+            "1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "Corning Gorilla Glass Victus",
+            "Always-on display"
+          ]
+        }
+      }
+    ],
+    "description": {
+      "Title": "Samsung Galaxy A55 5G",
+      "details": "Meet the Galaxy A55 5G. The simple yet improved Galaxy A series comes in an iconic design featuring a 3-camera layout in a metal flat frame design for an easy and intuitive grip. Plus, it’s built with Corning® Gorilla® Glass Victus®+ making it tougher and more damage-resistant.Take advantage of the improved Octa-core processor and effortlessly multi-task, game, and stream. Paired with 5G capabilities and internal storage options of 128GB or 256GB, expandable via a microSD card up to 1TB. Improved GPU, NPU, and integrated cooling system are designed to make your day.",
+      "features": [
+        "12GB RAM | 256GB ROM | Expandable Upto 1 TB",
+        "16.76 cm (6.6 inch) Full HD+ Display",
+        "50MP + 12MP + 5MP | 32MP Front Camera",
+        "5000 mAh Battery",
+        "Samsung Exynos 1480 Processor"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "category": "Cell Phones",
+    "brand": "Oppo",
+    "image": "OPPO_A77s.jpg",
+    "model": "OPPO A77s",
+    "featured": false,
+    "sale": false,
+    "newPrice": 0,
+    "price": 500,
+    "variants": [
+      {
+        "color": "Black",
+        "image": "OPPO_A77s.jpg",
+        "storage": 256,
+        "ram": 8,
+        "signal": "5g"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sihum Imesh",
+        "date": "October 12, 2023",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Samudhi Randula",
+        "date": "November 09, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      }
+    ],
+    "specification": [
+      {
+        "BODY": {
+          "mainTitle": "BODY",
+          "subTitles": [
+            "Dimensions",
+            "Weight",
+            "Build",
+            "SIM"
+          ],
+          "details": [
+            "161.4 x 74.2 x 8.9 mm (6.35 x 2.92 x 0.35 in)",
+            "199 g or 204.5 g (7.02 oz)",
+            "Glass front (Gorilla Glass Victus), glass back or silicone polymer back (eco leather), aluminum frame",
+            "Nano-SIM, eSIM or Dual SIM (Nano-SIM, dual stand-by)",
+            "IP68 dust/water resistant (up to 1.5m for 30 min)"
+          ]
+        },
+        "NETWORK": {
+          "mainTitle": "NETWORK",
+          "subTitles": [
+            "Technology"
+          ],
+          "details": [
+            "GSM / CDMA / HSPA / EVDO / LTE / 5G"
+          ]
+        },
+        "LAUNCH": {
+          "mainTitle": "LAUNCH",
+          "subTitles": [
+            "Announced",
+            "Status"
+          ],
+          "details": [
+            "2023, September 21",
+            "Available. Released 2023, September 21"
+          ]
+        },
+        "DISPLAY": {
+          "mainTitle": "DISPLAY",
+          "subTitles": [
+            "Type",
+            "Size",
+            "Resolution",
+            "Protection"
+          ],
+          "details": [
+            "AMOLED, 68B colors, 120Hz, Dolby Vision, HDR10+, 1800 nits (peak)",
+            "6.67 inches, 107.4 cm2 (~89.7% screen-to-body ratio)",
+            "1220 x 2712 pixels, 20:9 ratio (~446 ppi density)",
+            "Corning Gorilla Glass Victus",
+            "Always-on display"
+          ]
+        }
+      }
+    ],
+    "description": {
+      "Title": "OPPO A77s",
+      "details": "Meet the OPPO A77s. The simple yet improved Oppo A series comes in an iconic design featuring a 2-camera layout in a metal flat frame design for an easy and intuitive grip. Plus, it’s built with Corning® Gorilla® Glass Victus®+ making it tougher and more damage-resistant.Take advantage of the improved Octa-core processor and effortlessly multi-task, game, and stream. Paired with 5G capabilities and internal storage options of 128GB or 256GB, expandable via a microSD card up to 1TB. Improved GPU, NPU, and integrated cooling system are designed to make your day.",
+      "features": [
+        "8GB RAM | 256GB ROM | Expandable Upto 1 TB",
+        "6.56 inch HD+ Display",
+        "50MP + 2MP | 8MP Front Camera",
+        "5000 mAh Lithium-ion Polymer Battery",
+        "Qualcomm Snapdragon 680 Processor"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "category": "Laptop",
+    "brand": "Apple",
+    "image": "MacBook_Air_M3_Chip_13_inch.jpg",
+    "model": "Apple 2023 MacBook Pro M3 chip 14.2-inch",
+    "featured": true,
+    "sale": false,
+    "newPrice": 4000,
+    "price": 4200,
+    "variants": [
+      {
+        "color": "Silver",
+        "image": "MacBook_Air_M3_Chip_13_inch.jpg",
+        "storage": 512,
+        "ram": 8
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sihum Imesh",
+        "date": "October 12, 2023",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Samudhi Randula",
+        "date": "November 09, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Nuwan Madhushanka",
+        "date": "March 12, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Sudeshika Dulanjali",
+        "date": "March 26, 2024",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Kasun Tharaka",
+        "date": "April 17, 2024",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      }
+    ],
+    "specification": [
+      {
+        "brand": "Apple",
+        "Model Name": "MacBook Pro",
+        "Screen Size": "13.3 Inches",
+        "Hard Disk Size": 512,
+        "CPU Model": "Unknown",
+        "Ram Memory Installed Size": 8,
+        "Operating System": "Mac OS",
+        "Graphics Card Description": "Integrated",
+        "Graphics Coprocessor": "Apple M3"
+      }
+    ],
+    "description": {
+      "Title": "Apple 2023 MacBook Pro M3 chip",
+      "details": "MacBook Pro M3 chip blasts forward with the M3, M3 Pro, and M3 Max chips. Built on 3‑nanometer technology and featuring an all-new GPU architecture, they’re the most advanced chips ever built for a personal computer. And each one brings more pro performance and capability. Behold an entirely new class of GPU architecture. And the biggest breakthrough in graphics yet for Apple silicon. Dynamic Caching optimizes fast on-chip memory to dramatically increase average GPU utilization — driving a huge performance boost for the most demanding pro apps and games.",
+      "features": [
+        "Apple M3 chip with 8-core CPU, 10-core GPU, 16-core Neural Engine",
+        "8GB unified memory",
+        "512GB SSD storage",
+        "14-inch Liquid Retina XDR display",
+        "70W USB-C Power Adapter",
+        "Two Thunderbolt / USB 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port",
+        "Supercharged by M3",
+        "Up to 22 Hours of Battery Life"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "category": "Laptop",
+    "brand": "Apple",
+    "image": "Apple_MacBook_Pro_13_inch_M2.jpg",
+    "model": "Apple MacBook Pro 13-inch M2",
+    "featured": false,
+    "sale": false,
+    "newPrice": 0,
+    "price": 4200,
+    "variants": [
+      {
+        "color": "Silver",
+        "image": "Apple_MacBook_Pro_13_inch_M2.jpg",
+        "storage": 512,
+        "ram": 8
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sihum Imesh",
+        "date": "October 12, 2023",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Samudhi Randula",
+        "date": "November 09, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Nuwan Madhushanka",
+        "date": "March 12, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Sudeshika Dulanjali",
+        "date": "March 26, 2024",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      }
+    ],
+    "specification": [
+      {
+        "brand": "Apple",
+        "Model Name": "MacBook Pro",
+        "Screen Size": "13.3 Inches",
+        "Hard Disk Size": 512,
+        "CPU Model": "Unknown",
+        "Ram Memory Installed Size": 8,
+        "Operating System": "Mac OS",
+        "Graphics Card Description": "Integrated",
+        "Graphics Coprocessor": "Apple M3"
+      }
+    ],
+    "description": {
+      "Title": "Apple MacBook Pro 13-inch M2",
+      "details": "The new M2 chip makes the 13‑inch MacBook Pro more capable than ever. The same compact design supports up to 20 hours of battery life1 and an active cooling system to sustain enhanced performance. Featuring a brilliant Retina display, a FaceTime HD camera, and studio‑quality mics, it’s our most portable pro laptop.\n\nThe M2 chip begins the next generation of Apple silicon, with even more of the speed and power efficiency introduced by M1. So you can rip through workflows with a more powerful 8-core CPU. Create stunning graphics with a lightning‑fast 10‑core GPU. Work with more streams of 4K and 8K ProRes video with the high-performance media engine. And do it all at once with up to 24GB of faster unified memory.",
+      "features": [
+        "Apple M2 10-Core CPU",
+        "8GB Unified RAM | 512GB SSD",
+        "Wi-Fi 6 (802.11ax) | Bluetooth 5.0",
+        "Touch Bar | Touch ID Sensor",
+        "Magic Keyboard | Force Touch Trackpad"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "category": "Apple Vision Pro",
+    "brand": "Apple",
+    "image": "Apple_Vision_Pro.jpg",
+    "model": "Apple Vision Pro",
+    "featured": true,
+    "sale": true,
+    "newPrice": 9999,
+    "price": 10340,
+    "variants": [
+      {
+        "image": "Apple_Vision_Pro.jpg",
+        "storage": 512
+      },
+      {
+        "image": "Apple_Vision_Pro.jpg",
+        "storage": 256
+      },
+      {
+        "image": "Apple_Vision_Pro.jpg",
+        "storage": 1024
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sihum Imesh",
+        "date": "October 12, 2023",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Samudhi Randula",
+        "date": "November 09, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Nuwan Madhushanka",
+        "date": "March 12, 2023",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      },
+      {
+        "name": "Sudeshika Dulanjali",
+        "date": "March 26, 2024",
+        "rate": 5,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      }
+    ],
+    "specification": [
+      {}
+    ],
+    "description": {
+      "Title": "Apple Vision Pro",
+      "details": "Apple Vision Pro is the result of decades of experience designing high‑performance, mobile, and wearable devices — culminating in the most ambitious product Apple has ever created. Apple Vision Pro integrates incredibly advanced technology into an elegant, compact form, resulting in an amazing experience every time you put it on. Apple Vision Pro makes it easy to collaborate and connect wherever you are. FaceTime video tiles are life-size, and as new people join, the call simply expands in your room. Within FaceTime, you can also use apps to collaborate with colleagues on the same documents simultaneously.",
+      "features": [
+        "Designed by Apple",
+        "high‑performance",
+        "Make meetings more meaningful.",
+        "Innovation you can see, hear, and feel",
+        "most advanced Spatial Audio system ever",
+        "Revolutionary dual‑chip performance",
+        "An all‑new platform"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "category": "Speakers",
+    "brand": "JBL",
+    "image": "JBL_Boombox_3.jpg",
+    "model": "JBL Boombox 3",
+    "featured": true,
+    "sale": true,
+    "newPrice": 500,
+    "price": 540,
+    "variants": [
+      {
+        "color": "Black",
+        "image": "JBL_Boombox_3.jpg"
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sihum Imesh",
+        "date": "October 12, 2023",
+        "rate": 4,
+        "review": "Amazing Product, Good Product and Fast Delivery. Highly Recommended."
+      }
+    ],
+    "specification": [
+      {}
+    ],
+    "description": {
+      "Title": "JBL Boombox 3",
+      "details": "JBL’s Boombox 3 brings back all the beloved features of the Boombox 2 with a host of exciting upgrades. A new collection of transducers yield an entirely new HQ output that satisfies even the staunchest Sweetwater audiophiles. With a high-performance battery, you’ll experience 24 hours of continuous playback. You’ll also get access to JBL’s Portable app, which allows you to connect to other devices to amplify your sound, in addition to tuning EQ parameters. Plus, this blue-ribbon speaker provides excellent sound output, and it will continue to do so, courtesy of its sturdy design and multiple safety features. If you loved the Boombox 2, or if you simply love music in general, the JBL Boombox 3 makes for an incredibly satisfying listening experience.",
+      "features": [
+        "JBL Original Pro Sound",
+        "24 hours play time",
+        "IP67 Waterproof and Dustproof"
+      ]
+    }
   }
 ]

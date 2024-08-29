@@ -1,27 +1,67 @@
-export interface Product {
-	category: string;
-	id: number;
-	product: RootObjectProduct[];
+export interface Variants {
+  color: string;
+  image: string;
+  storage: number;
+  ram: number;
+  signal: string;
 }
-export interface RootObjectProduct {
-	id: number;
-	itemCategory: string;
-	title: string;
-	image: string;
-	price: number;
-	details: string;
-	qty: number;
-	description: {
-		description01: string;
-		features: string[];
-		description02: string;
-	}[];
-	additionalInfo: {
-		color: string;
-		height: string;
-		volume: string;
-		width: string;
-		productType: string;
-	};
 
+export interface Reviews {
+  name: string;
+  date: string;
+  rate: number;
+  review: string;
+}
+
+export interface BODY {
+  mainTitle: string;
+  subTitles: string[];
+  details: string[];
+}
+
+export interface NETWORK {
+  mainTitle: string;
+  subTitles: string[];
+  details: string[];
+}
+
+export interface LAUNCH {
+  mainTitle: string;
+  subTitles: string[];
+  details: string[];
+}
+
+export interface DISPLAY {
+  mainTitle: string;
+  subTitles: string[];
+  details: string[];
+}
+
+export interface Specificatio {
+  BODY: BODY;
+  NETWORK: NETWORK;
+  LAUNCH: LAUNCH;
+  DISPLAY: DISPLAY;
+}
+
+export interface Description {
+  title: string;
+  details: string;
+  features: string[];
+}
+
+export interface Product {
+  id: number;
+  category: string;
+  brand: string;
+  image: string;
+  model: string;
+  featured: boolean;
+  sale: boolean;
+  newPrice: number;
+  price: number;
+  variants: Variants[];
+  reviews: Reviews[];
+  specification: Specificatio[];
+  description: Description;
 }

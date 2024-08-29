@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import Item from "../../../images/product/Polaroid_Cube.png"
-import Iphone15 from "../../../images/product/Iphone_15.png"
+import Item from "../../../images/OldProduct/Polaroid_Cube.png"
+import Iphone15 from "../../../images/OldProduct/Iphone_15.png"
 
 export function DealOfTheDays() {
     const [timeLeft, setTimeLeft] = useState({days: 28, hours: 5, minutes: 34, seconds: 25});
