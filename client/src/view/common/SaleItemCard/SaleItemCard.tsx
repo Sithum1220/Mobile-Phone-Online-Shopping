@@ -9,8 +9,6 @@ interface TimeLeft {
     sec: number;
 }
 
-const IMAGE_BASE_URL = '../../../images/product/';
-
 export function SaleItemCard() {
     const [timeLeft, setTimeLeft] = useState<TimeLeft>({ day: 28, hrs: 5, min: 34, sec: 25 });
     const [saleProducts, setSaleProducts] = useState<Product[]>([]);

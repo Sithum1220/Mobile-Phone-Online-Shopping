@@ -6,6 +6,7 @@ import React, {useState} from "react";
 import {RecentFeaturedProducts} from "../../common/RecentFeaturedProducts/RecentFeaturedProducts";
 import {DealOfTheDays} from "../../common/DealOfTheDays/DealOfTheDays";
 import {BestSeller} from "../../common/BestSeller/BestSeller";
+import {ProductCard} from "../../common/ProductCard/ProductCard";
 
 export function Home() {
 
@@ -42,6 +43,7 @@ export function Home() {
 
             <div className="mx-auto max-w-[1240px] py-7 px-10">
                 <SaleItemCard/>
+                <RecentFeaturedProducts/>
                 {/*<RecentFeaturedProducts/>*/}
             </div>
             {/*<div*/}

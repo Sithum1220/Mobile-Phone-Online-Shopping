@@ -63,5 +63,5 @@ export interface Product {
   variants: Variants[];
   reviews: Reviews[];
   specification: Specificatio[];
-  description: Description;
+  description: Description | string; // Allow description to be either an object or a string
 }
