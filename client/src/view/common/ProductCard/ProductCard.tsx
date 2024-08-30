@@ -1,5 +1,6 @@
 import {Product} from "../../../model/Product";
 import React from "react";
+import {AddToCartButton} from "../AddToCartButton/AddToCartButton";
 
 interface ProductCardProps {
     Product: Product;
@@ -36,14 +37,7 @@ export function ProductCard({Product}: ProductCardProps) {
                 </div>
 
                 <RatingStars product={Product}/>
-                <div
-                    className="inline-block border-2 border-gray-200 rounded-full py-1 px-4 mt-2 hover:bg-primary hover:text-white transition-all duration-500">
-                    <button
-                        className="text-xs lg:text-sm font-light cursor-pointer"
-                    >
-                        ADD TO CART
-                    </button>
-                </div>
+               <AddToCartButton product={Product}/>
             </div>
         </div>
 

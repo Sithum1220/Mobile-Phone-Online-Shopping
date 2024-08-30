@@ -1,9 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { RootObjectProduct } from "../../../model/CartItem";
-
+import { Product } from "../../../model/Product";
 
 interface CartState {
-    items: RootObjectProduct[];
+    items: Product[];
 }
 
 const initialState: CartState = {
@@ -14,20 +13,20 @@ const CartItemSlice = createSlice({
     name: 'cart',
     initialState,
     reducers: {
-        addItem: (state, action: PayloadAction<RootObjectProduct>) => {
-            const existingItem = state.items.find(item => item.title === action.payload.title);
+        addItem: (state, action: PayloadAction<Product>) => {
+            const existingItem = state.items.find(item => item.id === action.payload.id);
             if (existingItem) {
                 existingItem.qty += 1;
             } else {
                 state.items.push({ ...action.payload, qty: 1 });
             }
         },
-        removeItem: (state, action: PayloadAction<string>) => {
-            state.items = state.items.filter(item => item.title !== action.payload);
+        removeItem: (state, action: PayloadAction<number>) => {
+            state.items = state.items.filter(item => item.id !== action.payload);
         },
-        updateItemQty: (state, action: PayloadAction<{ title: string; qty: number }>) => {
-            const { title, qty } = action.payload;
-            const existingItem = state.items.find(item => item.title === title);
+        updateItemQty: (state, action: PayloadAction<{ id: number; qty: number }>) => {
+            const { id, qty } = action.payload;
+            const existingItem = state.items.find(item => item.id === id);
             if (existingItem) {
                 existingItem.qty = qty;
             }

@@ -4,13 +4,13 @@ import {Link, useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../../redux/Store/Store";
 import {removeItem} from "../../redux/CartItemSlice/CartItemSlice";
-import {decrement} from "../../redux/CounterSlice/CounterSlice";
 
 export function Header() {
     const [showFeaturesPopup, setShowFeaturesPopup] = useState(false);
     const [showCartPopup, setShowCartPopup] = useState(false);
     const [hasScrolled, setHasScrolled] = useState(false);
     const [cartItemCount, setCartItemCount] = useState(0);
+    const [count, setCount] = useState(0);
     const dispatch = useDispatch();
     const navigate = useNavigate();
     useEffect(() => {
@@ -28,14 +28,19 @@ export function Header() {
     }, []);
 
     // @ts-ignore
-    const count = useSelector((state) => state.counter.value);
+    // const count = useSelector((state) => state.counter.value);
     // @ts-ignore
     const total = useSelector((state) => state.price.value);
     const items = useSelector((state: RootState) => state.cart.items);
-    const handleRemoveItem = (title: string) => {
-        dispatch(removeItem(title));
-        dispatch(decrement());
+    const handleRemoveItem = (id: number) => {
+        dispatch(removeItem(id));
+        // dispatch(decrement());
     };
+
+    useEffect(() => {
+        const totalQuantity = items.reduce((acc, item) => acc + item.qty, 0);
+        setCount(totalQuantity);
+    }, [items]);
 
     const handleViewCart = () => {
         navigate("/cart");
@@ -117,9 +122,9 @@ export function Header() {
                                                     <div className="flex flex-row gap-6">
                                                         <img src={require(`../../../images/product/${item.image}`)}
                                                              className="w-10 h-10 object-cover rounded"
-                                                             alt={item.title}/>
+                                                             alt={item.model}/>
                                                         <div>
-                                                            <h2 className="whitespace-nowrap text-sm font-medium text-gray-900">{item.title}</h2>
+                                                            <h2 className="whitespace-nowrap text-sm font-medium text-gray-900">{item.model}</h2>
                                                             <h2 className="whitespace-nowrap text-xs text-gray-500">${item.price.toFixed(2)}</h2>
                                                         </div>
                                                     </div>
@@ -129,7 +134,7 @@ export function Header() {
                                                              viewBox="0 -960 960 960"
                                                              width="24px" fill="#3452FF"
                                                              className="text-primary cursor-pointer"
-                                                             onClick={() => handleRemoveItem(item.title)}>
+                                                             onClick={() => handleRemoveItem(item.id)}>
                                                             <path
                                                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
                                                         </svg>

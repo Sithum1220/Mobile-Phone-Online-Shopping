@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import {removeItem, updateItemQty} from "../../redux/CartItemSlice/CartItemSlice"; // Adjust the import path
 import React, { useEffect, useState } from "react";
 import {total} from "../../redux/TotalPriceSlice/TotalPriceSlice";
-import {decrement} from "../../redux/CounterSlice/CounterSlice";
 
 export function Cart() {
     const items = useSelector((state: RootState) => state.cart.items);
@@ -18,16 +17,15 @@ export function Cart() {
         dispatch(total({ total: totalPrice }));
     }, [items, dispatch]);
 
-    const handleQtyOnChange = (e: React.ChangeEvent<HTMLInputElement>, title: string) => {
+    const handleQtyOnChange = (e: React.ChangeEvent<HTMLInputElement>, id: number) => {
         const newQty = parseInt(e.target.value);
         if (newQty > 0) {
-            dispatch(updateItemQty({ title: title, qty: newQty }));
+            dispatch(updateItemQty({ id: id, qty: newQty }));
         }
     };
 
-    const handleRemoveItem = (title: string) => {
-        dispatch(removeItem(title));
-        dispatch(decrement());
+    const handleRemoveItem = (id: number) => {
+        dispatch(removeItem(id));
     };
 
     return (
@@ -50,7 +48,7 @@ export function Cart() {
                         <tr key={item.id}>
                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                     width="24px" fill="#5f6368" onClick={() => handleRemoveItem(item.title)}>
+                                     width="24px" fill="#5f6368" onClick={() => handleRemoveItem(item.id)}>
                                     <path
                                         d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
                                 </svg>
@@ -58,14 +56,14 @@ export function Cart() {
 
                             <td className="px-6 py-4 whitespace-nowrap">
                                 <img src={require(`../../../images/product/${item.image}`)}
-                                     className="w-10 h-10 object-cover rounded" alt={item.title} />
+                                     className="w-10 h-10 object-cover rounded" alt={item.model} />
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{item.title}</td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{item.model}</td>
                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.price.toFixed(2)}</td>
                             <td className="py-4 whitespace-nowrap text-sm text-gray-500">
                                 <input
                                     className="border-[1px] px-2 w-20 py-3 rounded-xl border-gray-300"
-                                    onChange={(e) => handleQtyOnChange(e, item.title)}
+                                    onChange={(e) => handleQtyOnChange(e, item.id)}
                                     value={item.qty}
                                     type="number"
                                     min="1"

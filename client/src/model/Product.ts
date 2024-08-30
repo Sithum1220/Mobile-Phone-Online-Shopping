@@ -60,6 +60,7 @@ export interface Product {
   sale: boolean;
   newPrice: number;
   price: number;
+  qty: number;
   variants: Variants[];
   reviews: Reviews[];
   specification: Specificatio[];

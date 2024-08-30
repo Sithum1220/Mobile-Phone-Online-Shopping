@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import ProductItem from '../../../data/OldProduct.json';
 import {Product} from "../../../model/Product";
 import productList from '../../../data/product.json';
 import {ProductCard} from "../ProductCard/ProductCard";
