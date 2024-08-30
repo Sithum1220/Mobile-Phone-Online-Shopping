@@ -33,7 +33,7 @@ export function RecentFeaturedProducts() {
     }, [activeTab]);
 
     return (
-        <div className="">
+        <div>
             <div className="mx-auto max-w-[1240px] pt-8 lg:pt-14">
                 <ul className="flex flex-wrap justify-center lg:justify-start space-x-4 lg:space-x-6 mb-6 lg:mb-0">
                     {tabs.map((tab) => (
@@ -57,7 +57,7 @@ export function RecentFeaturedProducts() {
                 </ul>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-11">
+            <div className="flex mt-[2%] flex-wrap justify-center gap-11">
                 {displayedProducts.map(product => (
                     <ProductCard key={product.id} Product={product}/>
                 ))}

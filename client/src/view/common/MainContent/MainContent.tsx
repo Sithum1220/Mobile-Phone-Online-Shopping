@@ -4,6 +4,7 @@ import {Home} from "../../pages/Home/Home";
 import {About} from "../../pages/About/About";
 import {Contact} from "../../pages/Contact/Contact";
 import {Cart} from "../../pages/Cart/Cart";
+import {BuyProduct} from "../../pages/BuyProduct/BuyProduct";
 
 export class MainContent extends Component {
     render() {
@@ -18,6 +19,7 @@ export class MainContent extends Component {
                     <Route path="/about" Component={About}></Route>
                     <Route path="/contact" Component={Contact}></Route>
                     <Route path="/cart" Component={Cart}></Route>
+                    <Route path="/buy/:id" Component={BuyProduct}></Route>
                     {/*<Route path="/about" Component={About}></Route>*/}
                     {/*<Route path="/contact" Component={Contact}></Route>*/}
                 </Routes>
