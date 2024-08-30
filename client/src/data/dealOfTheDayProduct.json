@@ -1,0 +1,74 @@
+[{
+  "id": 1,
+  "category": "Drones",
+  "brand": "Pihot",
+  "image": "Pihot_P30_1080P_Drone.png",
+  "model": "Pihot P30 1080P Drone",
+  "featured": false,
+  "sale": true,
+  "newPrice": 500,
+  "price": 540,
+  "variants": [
+    {
+      "color": "Black",
+      "image": "Pihot_P30_1080P_Drone.png"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Emily Johnson",
+      "date": "August 15, 2023",
+      "rate": 5,
+      "review": "Absolutely love this product! It exceeded my expectations, and the quality is fantastic. Will definitely purchase again."
+    },
+    {
+      "name": "Michael Smith",
+      "date": "September 2, 2023",
+      "rate": 3,
+      "review": "The product is good, but the delivery took longer than expected. It's decent, but there's room for improvement."
+    },
+    {
+      "name": "Olivia Brown",
+      "date": "July 28, 2023",
+      "rate": 4,
+      "review": "Very happy with my purchase. The product works well, but the packaging could have been better."
+    },
+    {
+      "name": "James Lee",
+      "date": "June 10, 2023",
+      "rate": 2,
+      "review": "Not entirely satisfied. The product didn't match the description, and customer service was unresponsive."
+    },
+    {
+      "name": "Sophia Davis",
+      "date": "August 20, 2023",
+      "rate": 5,
+      "review": "Amazing! The quality is excellent, and it arrived earlier than expected. Highly recommend this product."
+    }
+  ],
+  "specification": [
+    {}
+  ],
+  "description": {
+    "Title": "Pihot P30 1080P Drone",
+    "details": "The hover stability of P30 is increased by 35% and auto-braking system is added (P30 will have a braking attitude when going uncontrollably, and the UAV will not keep hovering forward).",
+    "features": [
+      "Camera: Front Camera + Bottom Camera",
+      "Resolution: 1080p",
+      "Flight time: 15 minutes",
+      "Maximum Distance: 150 Meters",
+      "Frequency: 2.4GHz",
+      "Dimensions: 290 × 290 × 60mm"
+    ]
+  }
+},
+  {
+    "id": 1,
+    "category": "Cell Phones",
+    "brand": "Apple",
+    "image": "Iphone_15.png",
+    "model": "Apple Iphone 15",
+    "price": 1199,
+    "newPrice": 1099
+  }
+]

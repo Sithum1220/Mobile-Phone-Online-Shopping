@@ -44,17 +44,16 @@ export function Home() {
             <div className="mx-auto max-w-[1240px] py-7 px-10">
                 <SaleItemCard/>
                 <RecentFeaturedProducts/>
-                {/*<RecentFeaturedProducts/>*/}
             </div>
-            {/*<div*/}
-            {/*    style={{backgroundImage: `url(${bgGrid})`}}*/}
-            {/*    className="bg-[#fcfcfc] bg-auto mx-auto p-4 w-full">*/}
-            {/*    <DealOfTheDays/>*/}
-            {/*</div>*/}
+            <div
+                style={{backgroundImage: `url(${bgGrid})`}}
+                className="bg-[#fcfcfc] bg-auto mx-auto p-4 w-full">
+                <DealOfTheDays/>
+            </div>
 
-            {/*<div className="mx-auto max-w-[1240px] py-7 px-10">*/}
-            {/*    <BestSeller />*/}
-            {/*</div>*/}
+            <div className="mx-auto max-w-[1240px] py-7 px-10">
+                <BestSeller />
+            </div>
         </div>
     );
 }
