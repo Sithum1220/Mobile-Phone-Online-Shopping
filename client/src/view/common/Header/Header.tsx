@@ -38,7 +38,7 @@ export function Header() {
     };
 
     useEffect(() => {
-        const totalQuantity = items.reduce((acc, item) => acc + item.qty, 0);
+        const totalQuantity = items.reduce((acc, item) => acc + item.totalQty , 0);
         setCount(totalQuantity);
     }, [items]);
 

@@ -11,7 +11,7 @@ export function Cart() {
     const totalPrice = useSelector((state) => state.price.value);
     useEffect(() => {
         const calculateTotal = () => {
-            return items.reduce((acc, item) => acc + item.qty * item.price, 0);
+            return items.reduce((acc, item) => acc + item.totalQty * item.price, 0);
         };
         const totalPrice = calculateTotal();
         dispatch(total({ total: totalPrice }));
@@ -64,12 +64,12 @@ export function Cart() {
                                 <input
                                     className="border-[1px] px-2 w-20 py-3 rounded-xl border-gray-300"
                                     onChange={(e) => handleQtyOnChange(e, item.id)}
-                                    value={item.qty}
+                                    value={item.totalQty}
                                     type="number"
                                     min="1"
                                 />
                             </td>
-                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${(item.qty * item.price).toFixed(2)}</td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${(item.totalQty * item.price).toFixed(2)}</td>
                         </tr>
                     ))}
                     </tbody>

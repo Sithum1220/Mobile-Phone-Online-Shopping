@@ -17,8 +17,9 @@ const CartItemSlice = createSlice({
             const { product, qty } = action.payload;
             const existingItem = state.items.find(item => item.id === product.id);
             if (existingItem) {
-                existingItem.qty += qty;
+                existingItem.totalQty += qty;
             } else {
+                // @ts-ignore
                 state.items.push({ ...product, qty });
             }
         },
@@ -29,7 +30,7 @@ const CartItemSlice = createSlice({
             const { id, qty } = action.payload;
             const existingItem = state.items.find(item => item.id === id);
             if (existingItem) {
-                existingItem.qty = qty;
+                existingItem.totalQty = qty;
             }
         },
     },

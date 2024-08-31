@@ -8,9 +8,10 @@ import { Product } from "../../../model/Product";
 
 interface AddToCartButtonProps {
     product: Product;
+    disable: boolean;
 }
 
-export const AddToCartButton = ({ product }: AddToCartButtonProps) => {
+export const AddToCartButton = ({ product,disable }: AddToCartButtonProps) => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [isButtonActive, setIsButtonActive] = useState<boolean>(true);
@@ -21,7 +22,7 @@ export const AddToCartButton = ({ product }: AddToCartButtonProps) => {
         setIsButtonActive(!itemInCart);
 
         // Optional: Update total price if required
-        const totalPrice = items.reduce((acc, item) => acc + item.qty * item.price, 0);
+        const totalPrice = items.reduce((acc, item) => acc + item.totalQty * item.price, 0);
         dispatch(total({ total: totalPrice }));
     }, [dispatch, items, product]);
 
@@ -34,7 +35,7 @@ export const AddToCartButton = ({ product }: AddToCartButtonProps) => {
     };
 
     return (
-        <div className="inline-block border-2 border-gray-200 rounded-full py-1 px-4 mt-2 hover:bg-primary hover:text-white transition-all duration-500">
+        <div className={`inline-block border-2 border-gray-200 rounded-full py-1 px-4 mt-2 hover:bg-primary hover:text-white transition-all duration-500 ${disable ? 'pointer-events-none' : ''}`}>
             <button
                 className="text-xs lg:text-sm font-light cursor-pointer"
                 onClick={isButtonActive ? handleAddToCart : handleViewCart}

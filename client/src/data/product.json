@@ -9,20 +9,23 @@
     "sale": false,
     "newPrice": 0,
     "price": 790,
+    "totalQty": 18,
     "variants": [
       {
         "color": "Pink",
         "image": "iphone_15_pink.png",
         "storage": "128GB",
         "ram": "8GB",
-        "signal": "5g"
+        "signal": "5g",
+        "qty": 10
       },
       {
         "color": "Black",
         "image": "iphone_15_black.png",
         "storage": "128GB",
         "ram": "8GB",
-        "signal": "5g"
+        "signal": "5g",
+        "qty": 8
       }
     ],
     "reviews": [
@@ -130,20 +133,23 @@
     "sale": false,
     "newPrice": 0,
     "price": 1200,
+    "totalQty": 18,
     "variants": [
       {
         "color": "Hazel",
         "image": "Google_Pixel_8_Hazel.jpg",
         "storage": "128GB",
         "ram": "8GB",
-        "signal": "5g"
+        "signal": "5g",
+        "qty": 10
       },
       {
         "color": "Rose",
         "image": "Google_Pixel_8_rose.jpg",
         "storage": "128GB",
         "ram": "8GB",
-        "signal": "5g"
+        "signal": "5g",
+        "qty": 8
       }
     ],
     "reviews": [
@@ -256,20 +262,23 @@
     "sale": false,
     "newPrice": 0,
     "price": 1490,
+    "totalQty": 18,
     "variants": [
       {
         "color": "Titanium Black",
         "image": "Samsung_Galaxy_S24_Ultra_Titanium_Black.png",
         "storage": "256GB",
         "ram": "12GB",
-        "signal": "5g"
+        "signal": "5g",
+        "qty": 12
       },
       {
         "color": "Titanium Yellow",
         "image": "Samsung_Galaxy_S24_Ultra_Titanium_Yellow.png",
         "storage": "256GB",
         "ram": "12GB",
-        "signal": "5g"
+        "signal": "5g",
+        "qty": 6
       }
     ],
     "reviews": [
@@ -372,13 +381,15 @@
     "sale": false,
     "newPrice": 0,
     "price": 660,
+    "totalQty": 10,
     "variants": [
       {
         "color": "Black",
         "image": "Xiaomi_Redmi_Note_13_Pro_Plus_5G_Black.jpg",
         "storage": "256GB",
         "ram": "8GB",
-        "signal": "5g"
+        "signal": "5g",
+        "qty": 10
       }
     ],
     "reviews": [
@@ -474,13 +485,15 @@
     "sale": false,
     "newPrice": 3000,
     "price": 3200,
+    "totalQty": 10,
     "variants": [
       {
         "color": "Pink",
         "image": "Samsung_Galaxy_Z_Fold_6_Pink.jpg",
         "storage": "256GB",
         "ram": "8GB",
-        "signal": "5g"
+        "signal": "5g",
+        "qty": 10
       }
     ],
     "reviews": [
@@ -598,13 +611,15 @@
     "sale": true,
     "newPrice": 440,
     "price": 500,
+    "totalQty": 10,
     "variants": [
       {
         "color": "Black",
         "image": "OnePlus_12R_Black.jpg",
         "storage": "256GB",
         "ram": "8GB",
-        "signal": "5g"
+        "signal": "5g",
+        "qty": 10
       }
     ],
     "reviews": [
@@ -718,13 +733,15 @@
     "sale": false,
     "newPrice": 0,
     "price": 500,
+    "totalQty": 10,
     "variants": [
       {
         "color": "Ice Blue",
         "image": "Samsung_Galaxy_A55_5G.jpg",
         "storage": "256GB",
         "ram": "12GB",
-        "signal": "5g"
+        "signal": "5g",
+        "qty": 10
       }
     ],
     "reviews": [
@@ -849,13 +866,15 @@
     "sale": false,
     "newPrice": 0,
     "price": 500,
+    "totalQty": 10,
     "variants": [
       {
         "color": "Black",
         "image": "OPPO_A77s.jpg",
         "storage": "256GB",
         "ram": "8GB",
-        "signal": "5g"
+        "signal": "5g",
+        "qty": 10
       }
     ],
     "reviews": [
@@ -950,12 +969,14 @@
     "sale": false,
     "newPrice": 4000,
     "price": 4200,
+    "totalQty": 10,
     "variants": [
       {
         "color": "Silver",
         "image": "MacBook_Air_M3_Chip_13_inch.jpg",
         "storage": "512GB",
-        "ram": "8GB"
+        "ram": "8GB",
+        "qty": 10
       }
     ],
     "reviews": [
@@ -1028,12 +1049,14 @@
     "sale": false,
     "newPrice": 0,
     "price": 4200,
+    "totalQty": 10,
     "variants": [
       {
         "color": "Silver",
         "image": "Apple_MacBook_Pro_13_inch_M2.jpg",
         "storage": "512GB",
-        "ram": "8GB"
+        "ram": "8GB",
+        "qty": 10
       }
     ],
     "reviews": [
@@ -1097,18 +1120,22 @@
     "sale": true,
     "newPrice": 9999,
     "price": 10340,
+    "totalQty": 23,
     "variants": [
       {
         "image": "Apple_Vision_Pro.jpg",
-        "storage": "512GB"
+        "storage": "512GB",
+        "qty": 5
       },
       {
         "image": "Apple_Vision_Pro.jpg",
-        "storage": "256GB"
+        "storage": "256GB",
+        "qty": 8
       },
       {
         "image": "Apple_Vision_Pro.jpg",
-        "storage": "1TB"
+        "storage": "1TB",
+        "qty": 10
       }
     ],
     "reviews": [
@@ -1164,10 +1191,12 @@
     "sale": true,
     "newPrice": 500,
     "price": 540,
+    "totalQty": 0,
     "variants": [
       {
         "color": "Black",
-        "image": "JBL_Boombox_3.jpg"
+        "image": "JBL_Boombox_3.jpg",
+        "qty": 10
       }
     ],
     "reviews": [

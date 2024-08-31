@@ -27,7 +27,7 @@ export function BuyProduct() {
 
     useEffect(() => {
         const calculateTotal = () => {
-            return items.reduce((acc, item) => acc + item.qty * item.price, 0);
+            return items.reduce((acc, item) => acc + item.totalQty * item.price, 0);
         };
         const totalPrice = calculateTotal();
         dispatch(total({ total: totalPrice }));
@@ -60,15 +60,18 @@ export function BuyProduct() {
         setSelectedColor(color);
     };
 
-    // Extract unique options from product variants
-    const colorOptions = Array.from(new Set(product.variants.map(variant => variant.color))).filter(color => color !== undefined);
-    const storageOptions = Array.from(new Set(product.variants.map(variant => variant.storage))).filter(storage => storage !== undefined);
-    const ramOptions = Array.from(new Set(product.variants.map(variant => variant.ram))).filter(ram => ram !== undefined);
-    const networkOptions = Array.from(new Set(product.variants.map(variant => variant.signal))).filter(signal => signal !== undefined);
+    const availableVariants = product.variants.filter(variant => variant.qty > 0);
+
+    const colorOptions = Array.from(new Set(availableVariants.map(variant => variant.color))).filter(color => color !== undefined);
+    const storageOptions = Array.from(new Set(availableVariants.map(variant => variant.storage))).filter(storage => storage !== undefined);
+    const ramOptions = Array.from(new Set(availableVariants.map(variant => variant.ram))).filter(ram => ram !== undefined);
+    const networkOptions = Array.from(new Set(availableVariants.map(variant => variant.signal))).filter(signal => signal !== undefined);
 
     // Find the image URL based on the selected color
     const selectedVariant = product.variants.find(variant => variant.color === selectedColor);
     const imageUrl = selectedVariant ? selectedVariant.image : product.image;
+    const variantQty = selectedVariant ? selectedVariant.qty : 0;
+    const totalQty = product.totalQty;
 
     return (
         <div className="mx-auto max-w-[1240px] px-10 py-7">
@@ -111,7 +114,7 @@ export function BuyProduct() {
                         {colorOptions.length > 0 && (
                             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4">
                                 <h2 className="text-lg font-medium min-w-[100px]">Color:</h2>
-                                <ComboBox options={colorOptions} handleInputChange={handleColorChange} />
+                                <ComboBox options={colorOptions} handleInputChange={handleColorChange} totalQty={totalQty}/>
                             </div>
                         )}
 
@@ -119,7 +122,7 @@ export function BuyProduct() {
                         {storageOptions.length > 0 && (
                             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4">
                                 <h2 className="text-lg font-medium min-w-[100px]">Storage:</h2>
-                                <ComboBox options={storageOptions} handleInputChange={() => {}} />
+                                <ComboBox options={storageOptions} handleInputChange={() => {}} totalQty={totalQty} />
                             </div>
                         )}
 
@@ -127,7 +130,7 @@ export function BuyProduct() {
                         {ramOptions.length > 0 && (
                             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4">
                                 <h2 className="text-lg font-medium min-w-[100px]">Ram:</h2>
-                                <ComboBox options={ramOptions} handleInputChange={() => {}} />
+                                <ComboBox options={ramOptions} handleInputChange={() => {}} totalQty={totalQty} />
                             </div>
                         )}
 
@@ -135,7 +138,7 @@ export function BuyProduct() {
                         {networkOptions.length > 0 && (
                             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4">
                                 <h2 className="text-lg font-medium min-w-[100px]">Network:</h2>
-                                <ComboBox options={networkOptions} handleInputChange={() => {}} />
+                                <ComboBox options={networkOptions} handleInputChange={() => {}} totalQty={totalQty}/>
                             </div>
                         )}
                     </div>
@@ -148,19 +151,28 @@ export function BuyProduct() {
                                 value={qty}
                                 type="number"
                                 min="1"
+                                disabled={variantQty === 0}
                             />
                         </div>
 
                         <div
-                            className="inline-block border-2 border-gray-200 rounded-full py-2 px-4 mt-2 hover:bg-primary hover:text-white transition-all duration-500">
+                            className={`inline-block border-2 border-gray-200 rounded-full py-2 px-4 mt-2 
+                            ${totalQty === 0 ? 'cursor-not-allowed opacity-50' : 'hover:bg-primary hover:text-white transition-all duration-500'}`}
+                        >
                             <button
                                 className="text-xs lg:text-sm font-light cursor-pointer"
                                 onClick={handleAddToCart}
+                                disabled={variantQty === 0}
                             >
-                                ADD TO CART
+                                {totalQty === 0 ? 'OUT OF STOCK' : 'ADD TO CART'}
                             </button>
                         </div>
                     </div>
+                    {totalQty === 0 && (
+                        <div className="mt-2 text-red-500 text-sm">
+                            This product is currently out of stock.
+                        </div>
+                    )}
                     <div className="mt-3 flex gap-12">
                         <div className="flex flex-col gap-3">
                             <h2 className="text-sm">Categories:</h2>

@@ -4,6 +4,7 @@ export interface Variants {
   storage: string;
   ram: string;
   signal: string;
+  qty:number;
 }
 
 export interface Reviews {
@@ -60,7 +61,7 @@ export interface Product {
   sale: boolean;
   newPrice: number;
   price: number;
-  qty: number;
+  totalQty: number;
   variants: Variants[];
   reviews: Reviews[];
   specification: Specificatio[];
