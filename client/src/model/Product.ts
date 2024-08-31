@@ -1,8 +1,8 @@
 export interface Variants {
   color: string;
   image: string;
-  storage: number;
-  ram: number;
+  storage: string;
+  ram: string;
   signal: string;
 }
 

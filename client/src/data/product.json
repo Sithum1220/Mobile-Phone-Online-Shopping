@@ -13,15 +13,15 @@
       {
         "color": "Pink",
         "image": "iphone_15_pink.png",
-        "storage": 128,
-        "ram": 8,
+        "storage": "128GB",
+        "ram": "8GB",
         "signal": "5g"
       },
       {
         "color": "Black",
         "image": "iphone_15_black.png",
-        "storage": 128,
-        "ram": 8,
+        "storage": "128GB",
+        "ram": "8GB",
         "signal": "5g"
       }
     ],
@@ -134,15 +134,15 @@
       {
         "color": "Hazel",
         "image": "Google_Pixel_8_Hazel.jpg",
-        "storage": 128,
-        "ram": 8,
+        "storage": "128GB",
+        "ram": "8GB",
         "signal": "5g"
       },
       {
         "color": "Rose",
         "image": "Google_Pixel_8_rose.jpg",
-        "storage": 128,
-        "ram": 8,
+        "storage": "128GB",
+        "ram": "8GB",
         "signal": "5g"
       }
     ],
@@ -260,15 +260,15 @@
       {
         "color": "Titanium Black",
         "image": "Samsung_Galaxy_S24_Ultra_Titanium_Black.png",
-        "storage": 256,
-        "ram": 12,
+        "storage": "256GB",
+        "ram": "12GB",
         "signal": "5g"
       },
       {
         "color": "Titanium Yellow",
-        "image": "Samsung_Galaxy_S24_Ultra_Titanium_Black.png",
-        "storage": 256,
-        "ram": 12,
+        "image": "Samsung_Galaxy_S24_Ultra_Titanium_Yellow.png",
+        "storage": "256GB",
+        "ram": "12GB",
         "signal": "5g"
       }
     ],
@@ -376,8 +376,8 @@
       {
         "color": "Black",
         "image": "Xiaomi_Redmi_Note_13_Pro_Plus_5G_Black.jpg",
-        "storage": 256,
-        "ram": 8,
+        "storage": "256GB",
+        "ram": "8GB",
         "signal": "5g"
       }
     ],
@@ -478,8 +478,8 @@
       {
         "color": "Pink",
         "image": "Samsung_Galaxy_Z_Fold_6_Pink.jpg",
-        "storage": 256,
-        "ram": 8,
+        "storage": "256GB",
+        "ram": "8GB",
         "signal": "5g"
       }
     ],
@@ -602,8 +602,8 @@
       {
         "color": "Black",
         "image": "OnePlus_12R_Black.jpg",
-        "storage": 256,
-        "ram": 8,
+        "storage": "256GB",
+        "ram": "8GB",
         "signal": "5g"
       }
     ],
@@ -722,8 +722,8 @@
       {
         "color": "Ice Blue",
         "image": "Samsung_Galaxy_A55_5G.jpg",
-        "storage": 256,
-        "ram": 12,
+        "storage": "256GB",
+        "ram": "12GB",
         "signal": "5g"
       }
     ],
@@ -853,8 +853,8 @@
       {
         "color": "Black",
         "image": "OPPO_A77s.jpg",
-        "storage": 256,
-        "ram": 8,
+        "storage": "256GB",
+        "ram": "8GB",
         "signal": "5g"
       }
     ],
@@ -954,8 +954,8 @@
       {
         "color": "Silver",
         "image": "MacBook_Air_M3_Chip_13_inch.jpg",
-        "storage": 512,
-        "ram": 8
+        "storage": "512GB",
+        "ram": "8GB"
       }
     ],
     "reviews": [
@@ -1032,8 +1032,8 @@
       {
         "color": "Silver",
         "image": "Apple_MacBook_Pro_13_inch_M2.jpg",
-        "storage": 512,
-        "ram": 8
+        "storage": "512GB",
+        "ram": "8GB"
       }
     ],
     "reviews": [
@@ -1100,15 +1100,15 @@
     "variants": [
       {
         "image": "Apple_Vision_Pro.jpg",
-        "storage": 512
+        "storage": "512GB"
       },
       {
         "image": "Apple_Vision_Pro.jpg",
-        "storage": 256
+        "storage": "256GB"
       },
       {
         "image": "Apple_Vision_Pro.jpg",
-        "storage": 1024
+        "storage": "1TB"
       }
     ],
     "reviews": [
