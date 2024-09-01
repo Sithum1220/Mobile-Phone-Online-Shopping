@@ -41,7 +41,7 @@ const ComboBox: React.FC<ComboBoxProps> = ({ options, handleInputChange, totalQt
     };
 
     return (
-        <div className="relative w-64">
+        <div className="relative">
             <input
                 type="text"
                 value={inputValue}
